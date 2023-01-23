@@ -1,20 +1,63 @@
 <ion-tabs>
 
-  <ion-tab-bar slot="bottom">
+  <!-- <ion-tab-bar slot="bottom">
     <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Acceuil</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+      <ion-icon name="restaurant-outline"></ion-icon>
+      <ion-label>Menu</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+      <ion-icon name="add-circle-outline" style=""></ion-icon>
+     
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab4">
+      <ion-icon name="mail-unread-outline"></ion-icon>
+      <ion-label>Notifications</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab5">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profile</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
-
+   -->
+   
+   <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab1" style="margin-left: 10px;">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Acceuil</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab2" style="margin-left:-5px;">
+        <ion-icon name="restaurant-outline"></ion-icon>
+        <ion-label>Menu</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button></ion-tab-button>
+  
+      <ion-tab-button tab="tab4"style="margin-left:11px;">
+        <ion-icon name="mail-unread-outline"></ion-icon>
+        <ion-label>Activité</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab5"style="margin-right:11px;">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+    <!-- horizontal="center" -->
+  <ion-fab vertical="bottom" horizontal="center"slot="fixed" edge="false">
+    <ion-fab-button type="button">
+        <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    
+  </ion-fab>
 </ion-tabs>
