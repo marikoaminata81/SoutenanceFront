@@ -1,28 +1,29 @@
 
 
                             <!--PAGE D'ACCEUIL-->
-
-<ion-header>
+                            <ion-header>
   
-  <ion-toolbar class="insta-feed-header" color="">
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon name="cart" size="90px"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title style="text-align: center;">
-      <img style="height: 70px;width: 70px;" src="../assets/Logo1.png" alt="">
-      
-      
-    </ion-title>
-    <ion-buttons slot="end">
-      
-      <ion-button routerLink="/recherche">
-        <ion-icon name="Search"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+                              <ion-toolbar class="insta-feed-header" color="">
+                                <ion-buttons slot="start">
+                                  <ion-button>
+                                    <ion-icon name="cart" size="90px"></ion-icon>
+                                  </ion-button>
+                                </ion-buttons>
+                                <ion-title style="text-align: center;">
+                                  <img style="height: 70px;width: 70px;" src="../assets/Logo1.png" alt="">
+                                  
+                                  
+                                </ion-title>
+                                <ion-buttons slot="end">
+                                  
+                                  <ion-button routerLink="/recherche">
+                                    <ion-icon name="Search"></ion-icon>
+                                  </ion-button>
+                                </ion-buttons>
+                              </ion-toolbar>
+                            </ion-header>
+                           
+                          
 
 <ion-content>
 
@@ -260,16 +261,19 @@
   <ion-slides [options]="slideOpts">
     <ion-slide>
       <div class="video-box">
-        <video controls loop="true" preload="auto" 
+        <video  (pause)="true"  loop="true" preload="auto" 
            class="videoPlayer">
            <source src="../assets/video.mp4" type="video/mp4" />
         </video>
+      <div class="haut">
         <h3 class="title">
           
-          <ion-avatar style="height: 40px; width: 40px;margin: -5px;display: inline-block;margin-top: 40px;"><img src="../assets/Nounou-DEMBAGA.jpg"></ion-avatar>
-          <a style="color: #E88441;display:inline-block; padding: 10px;"> Pink</a> </h3>
-        <p class="description">Mafé facile à faire en 30 minutes</p>
-        
+          <ion-avatar style="height: 40px; width: 40px;margin: -5px;display: inline-block;margin-top: 40px;padding: -62px;"><img src="../assets/Nounou-DEMBAGA.jpg"></ion-avatar>
+          <a style="color: #E88441;display:inline-block; padding: 10px;vertical-align: bottom;"> Pink</a>
+          
+        </h3>
+        <p class="description" style="padding-left: 40px;">Mafé facile à faire en 30 minutes</p> 
+      </div>
         <div class="button-box">
           
           <br>

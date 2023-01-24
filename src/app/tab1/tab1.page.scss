@@ -298,6 +298,10 @@
         transform: translate3d(-100%,0,0);
     }
 }
+.haut{
+    position: relative;
+    display: flex;
+}
 .button-box {
     position: absolute;
     right: 0;

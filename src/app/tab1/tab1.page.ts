@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { VideoPlayer } from '@ionic-native/video-player/ngx';
+import { ModalController} from '@ionic/angular';
 
 
 
@@ -16,12 +18,16 @@ export class Tab1Page {
   };
 
  
-  constructor() {}
+  constructor(private videoPlayer: VideoPlayer, public modalCtrl: ModalController) {
+    this.videoPlayer.play('../assets/video.mp4').then(() => {
+console.log('video completed');
+}).catch(err => {
+console.log(err);
+});
+  }
 
  
 
 }
-function ViewChild(arg0: string) {
-  throw new Error('Function not implemented.');
-}
+
 

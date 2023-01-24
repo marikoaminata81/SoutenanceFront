@@ -21,6 +21,14 @@ const routes: Routes = [
   {
     path: 'commentaire',
     loadChildren: () => import('./commentaire/commentaire.module').then( m => m.CommentairePageModule)
+  },
+  {
+    path: 'page-oups',
+    loadChildren: () => import('./page-oups/page-oups.module').then( m => m.PageOupsPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 ];
 @NgModule({
