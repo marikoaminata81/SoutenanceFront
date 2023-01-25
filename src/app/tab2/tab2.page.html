@@ -1,16 +1,14 @@
 <ion-header>
   
-  <ion-toolbar class="insta-feed-header" color="">
+  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
     <ion-buttons slot="start">
       <ion-button>
         <ion-icon name="cart" size="90px"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title style="text-align: center;">
-      <img style="height: 70px;width: 70px;" src="../assets/Logo1.png" alt="">
+    
+      <img class="logo" src="../assets/Logo1.png" alt="">
       
-      
-    </ion-title>
     <ion-buttons slot="end">
       
       <ion-button routerLink="/recherche">
@@ -19,13 +17,113 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <div>
-     <h1><p style="color:#E88441; text-align: center;">Oups !</p></h1>
-      <h4><p style="text-align: center;"><span style="color:#E88441;" routerLink="/login">Connectez-vous</span> pour acceder à cette page!!</p></h4>
-  </div>
 
-  <div class="image">
-    <ion-img src="../assets/foodprep.gif"></ion-img>
-  </div>
+
+<ion-content class="ion-padding">
+  <ion-title>
+    Produits ajoutés recement
+  </ion-title>
+  <ion-card>
+  <ion-slides [options]="slideOpts">
+    <ion-slide>
+      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+    </ion-slide>
+  </ion-slides>
+</ion-card>
+<br>
+<ion-title>Catégorie</ion-title>
+   <br>
+  <div id="container">
+  <ion-card >
+    
+      <img style="height: 100px; width: 150px;" src="../../assets/gastro2.jpg">
+      
+    <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+      <ion-button fill="outline" style="height: 20px;width: 80px;">
+        <ion-icon name="add"></ion-icon>
+      Voir Plus
+    </ion-button>
+  </ion-card-content>
+    
+
+  </ion-card>
+  <ion-card >
+   
+      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+      <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+        <ion-button fill="outline" style="height: 20px;width: 80px;">
+          <ion-icon name="add"></ion-icon>
+        Voir Plus
+      </ion-button>
+    </ion-card-content>
+
+  </ion-card>
+  
+  <ion-card >
+    
+      <img  src="../../assets/pexels-rajesh-tp-1624487.jpg">
+      <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+        <ion-button fill="outline" style="height: 20px;width: 80px;">
+          <ion-icon name="add"></ion-icon>
+        Voir Plus
+      </ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card  >
+    
+      <img  src="../../assets/ginger-juice.jpg">
+      <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+        <ion-button fill="outline" style="height: 20px;width: 80px;">
+          <ion-icon name="add"></ion-icon>
+        Voir Plus
+      </ion-button>
+    </ion-card-content>
+
+  </ion-card>
+  
+  <ion-card  >
+    
+    <img  src="../../assets/ginger-juice.jpg">
+    <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+      <ion-button fill="outline" style="height: 20px;width: 80px;">
+        <ion-icon name="add"></ion-icon>
+      Voir Plus
+    </ion-button>
+  </ion-card-content>
+
+</ion-card>
+<ion-card  >
+    
+  <img  src="../../assets/ginger-juice.jpg">
+  <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+    <ion-button fill="outline" style="height: 20px;width: 80px;">
+      <ion-icon name="add"></ion-icon>
+    Voir Plus
+  </ion-button>
+</ion-card-content>
+
+</ion-card>
+<ion-card  >
+    
+  <img  src="../../assets/fruits_@2x.png">
+  <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+    <ion-button fill="outline" style="height: 20px;width: 80px;">
+      <ion-icon name="add"></ion-icon>
+    Voir Plus
+  </ion-button>
+</ion-card-content>
+
+</ion-card>
+</div>
 </ion-content>

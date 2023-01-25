@@ -1,67 +1,36 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header> -->
+<ion-header>
+
+</ion-header>
 
 <ion-content>
-  <div>
-    <ion-img style="height: 160px; width: 160px;margin-left:50px;" src="../assets/EllipseLogin.png"> </ion-img>
-  </div>
-  <br>
-  <div>
-    <div class="login-wrap">
-      <div class="login-html">
-        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Connexion</label>
-        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Inscription</label>
-        <div class="login-form">
-          <div class="sign-in-htm">
-            <div class="group">
-              <ion-item>
-              <ion-input type="text" color="black" placeholder="Veuillez saisir votre username"></ion-input>
+
+  <div class="background-pic">
+     <div class="background-filter">
+       <div class="shape"><img src="../../assets/Test.svg" /></div>
+
+       <ion-card>
+         <ion-card-header>
+           
+            <ion-img style="height: 250px; width: 250px; padding-left: 10%;" src="../../assets/Logo1.png"></ion-img>
+          
+          
+         </ion-card-header>
+         <ion-card-content>
+            <ion-item>
+             <ion-input placeholder="Nom d'utilisateur"></ion-input>
             </ion-item>
+            <ion-item>
+              <ion-input placeholder="Mot de passe"></ion-input>
+            </ion-item>
+            <a href="#">Mot de passe oublié?</a>
+
+            <div class="bottom-section">
+              <ion-button (click)="navigateToLoginPage()">Connexion</ion-button>
+              <span> Vous n'avez pas de compte ? <a href="http://localhost:8100/signup"> Inscrivez-vous</a></span>
             </div>
-            <div class="group">
-              <label for="pass" class="label">Mot de passe</label>
-              <input id="pass" type="password" class="input" data-type="password">
-            </div>
-            
-            <div class="group">
-              <input type="submit" class="button" value="Connexion">
-            </div>
-            <div class="hr"></div>
-            <div class="foot-lnk">
-              <ion-item lines="none">
-                <ion-button style="color: #E88441;" fill="clear" slot="end">Mot de passe oublié ? </ion-button>
-              </ion-item>
-            </div>
-          </div>
-          <div class="sign-up-htm">
-            <div class="group">
-              <label for="user" class="label">Nom d'utilisateur</label>
-              <input id="user" type="text" class="input">
-            </div>
-            <div class="group">
-              <label for="pass" class="label">Mot de passe</label>
-              <input id="pass" type="password" class="input" data-type="password">
-            </div>
-            <div class="group">
-              <label for="pass" class="label">Répeter mot de passe</label>
-              <input id="pass" type="password" class="input" data-type="password">
-            </div>
-            <div class="group">
-              <label for="pass" class="label">Email</label>
-              <input id="pass" type="text" class="input">
-            </div>
-            <div class="group">
-              <input type="submit" class="button" value="Envoyer" routerLink="/login">
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+         </ion-card-content>
+       </ion-card>
+     </div>
+  </div>
 
 </ion-content>

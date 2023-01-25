@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MainscreenPage } from './mainscreen/mainscreen.page';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor() {}
+ 
 }

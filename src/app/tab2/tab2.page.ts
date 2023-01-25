@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
-
+  slideOpts = {
+    direction: 'horizontal',
+    autoplay:true
+    
+  };
 }

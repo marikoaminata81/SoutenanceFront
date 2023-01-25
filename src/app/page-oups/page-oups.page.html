@@ -1,16 +1,14 @@
 <ion-header>
   
-  <ion-toolbar class="insta-feed-header" color="">
+  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
     <ion-buttons slot="start">
       <ion-button>
         <ion-icon name="cart" size="90px"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title style="text-align: center;">
-      <img style="height: 70px;width: 70px;" src="../assets/Logo1.png" alt="">
+    
+      <img class="logo" src="../assets/Logo1.png" alt="">
       
-      
-    </ion-title>
     <ion-buttons slot="end">
       
       <ion-button routerLink="/recherche">
@@ -20,6 +18,11 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <div>
+     <h1><p style="color:#E88441; text-align: center;">Oups !</p></h1>
+      <h4><p style="text-align: center;"><span style="color:#E88441;" routerLink="/login">Connectez-vous</span> pour acceder à cette page!!</p></h4>
+  </div>
+
   <div class="image">
     <ion-img src="../assets/foodprep.gif"></ion-img>
   </div>

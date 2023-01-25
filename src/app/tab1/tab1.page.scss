@@ -84,15 +84,20 @@
 //     }
 //   }
   
-//   .insta-feed-header {
-//     ion-icon{
-//       font-size: 28px;
-//     }
-//     .insta-font{
-//       font-family: 'Aabezzee', cursive;
-//       font-size: 28px;
-//     }
-//   }
+ .insta-feed-header {
+   ion-icon{
+    font-size: 28px;
+   }
+   .insta-font{
+      font-family: 'Aabezzee', cursive;
+      font-size: 28px;
+    }
+  }
+  .logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+  }
   
 //   .status-wrapper{
 //     border-bottom: 1px solid #f3f3f3;
@@ -232,7 +237,9 @@
 
 
 
+.logo{
 
+}
 
 .video-box {
     height: 100%;
@@ -243,27 +250,37 @@
 }
 .videoPlayer {
     width: 100%;
+    margin-top: -30px;
+
 }
 .video-box .title {
+    
     position: absolute;
     color: white;
-    bottom: 50px;
+    bottom: 670px;
     left: 10px;
     font-size: 16px;
 }
 .video-box .title ion-icon {
+    
     color: white;
-    background-color: #56a0fc;
+    background-color: #000000;
     margin-bottom: -3px;
     padding: 2px;
     font-size: 10px;
     border-radius: 50%;
 }
+.username{
+    color: #E88441;
+   
+}
 .video-box .description {
+    
     position: absolute;
+    
     color: white;
-    bottom: 30px;
-    left: 10px;
+    bottom: 425px;
+    left: 49px;
     font-size: 12px;
 }
 .song {
@@ -313,8 +330,8 @@
     align-items: center;
 }
 .button-box ion-avatar {
-    border: solid white 2px;
-    margin-bottom: -10px;
+   // border: solid white 2px;
+    margin-bottom: 3px;
 }
 .button-box ion-badge {
     --color: white;
