@@ -1,17 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+<ion-header>
+  
+  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="cart" style="color: #E88441;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+      <img class="logo" src="../assets/Logo1.png" alt="">
+      
+    <ion-buttons slot="end">
+      
+      <ion-button routerLink="/recherche">
+        <ion-icon name="Search" style="color: #E88441;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content >
+  <div>
+<ion-card>
+<img src="../../assets/mafé.PNG" alt="">
+</ion-card>
+</div>
 </ion-content>

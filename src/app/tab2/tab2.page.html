@@ -3,7 +3,7 @@
   <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
     <ion-buttons slot="start">
       <ion-button>
-        <ion-icon name="cart" size="90px"></ion-icon>
+        <ion-icon name="cart" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
     
@@ -12,7 +12,7 @@
     <ion-buttons slot="end">
       
       <ion-button routerLink="/recherche">
-        <ion-icon name="Search"></ion-icon>
+        <ion-icon name="Search" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -20,27 +20,30 @@
 
 
 <ion-content class="ion-padding">
-  <ion-title>
-    Produits ajoutés recement
-  </ion-title>
-  <ion-card>
+  
+  <div style="color: #E88441; "><h2>Nouveaux produits</h2></div>
+  <div style="width: 100%;">
+    <ion-card>
   <ion-slides [options]="slideOpts">
-    <ion-slide>
-      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+    
+    <ion-slide >
+        <img routerLink="" src="../../assets/pexels-robin-stickel-70497.jpg">
     </ion-slide>
     <ion-slide>
-      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+      <img routerLink="" src="../../assets/pexels-robin-stickel-70497.jpg">
     </ion-slide>
     <ion-slide>
-      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+      <img routerLink="" src="../../assets/pexels-robin-stickel-70497.jpg">
     </ion-slide>
     <ion-slide>
-      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+      <img routerLink="" src="../../assets/pexels-robin-stickel-70497.jpg">
     </ion-slide>
+   
   </ion-slides>
 </ion-card>
+</div>
 <br>
-<ion-title>Catégorie</ion-title>
+<div style="color: #E88441;"><h2>Catégorie</h2></div>
    <br>
   <div id="container">
   <ion-card >
@@ -48,9 +51,9 @@
       <img style="height: 100px; width: 150px;" src="../../assets/gastro2.jpg">
       
     <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-      <ion-button fill="outline" style="height: 20px;width: 80px;">
+      <ion-button fill="outline" style=" height: 20px;width: 90px;">
         <ion-icon name="add"></ion-icon>
-      Voir Plus
+      Voir Plus 
     </ion-button>
   </ion-card-content>
     
@@ -58,9 +61,9 @@
   </ion-card>
   <ion-card >
    
-      <img  src="../../assets/pexels-robin-stickel-70497.jpg">
+      <img  src="../../assets/Rectangle_66 (2).png">
       <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-        <ion-button fill="outline" style="height: 20px;width: 80px;">
+        <ion-button fill="outline" style="height: 20px;width: 90px;">
           <ion-icon name="add"></ion-icon>
         Voir Plus
       </ion-button>
@@ -70,9 +73,9 @@
   
   <ion-card >
     
-      <img  src="../../assets/pexels-rajesh-tp-1624487.jpg">
+      <img  src="../../assets/Rectangle_66 (4).png">
       <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-        <ion-button fill="outline" style="height: 20px;width: 80px;">
+        <ion-button fill="outline" style="height: 20px;width: 90px;">
           <ion-icon name="add"></ion-icon>
         Voir Plus
       </ion-button>
@@ -84,7 +87,7 @@
     
       <img  src="../../assets/ginger-juice.jpg">
       <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-        <ion-button fill="outline" style="height: 20px;width: 80px;">
+        <ion-button fill="outline" style="height: 20px;width: 90px;">
           <ion-icon name="add"></ion-icon>
         Voir Plus
       </ion-button>
@@ -94,9 +97,9 @@
   
   <ion-card  >
     
-    <img  src="../../assets/ginger-juice.jpg">
+    <img  src="../../assets/pexels-photo-248489.jpeg">
     <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-      <ion-button fill="outline" style="height: 20px;width: 80px;">
+      <ion-button fill="outline" style="height: 20px;width: 90px;">
         <ion-icon name="add"></ion-icon>
       Voir Plus
     </ion-button>
@@ -105,9 +108,9 @@
 </ion-card>
 <ion-card  >
     
-  <img  src="../../assets/ginger-juice.jpg">
+  <img  src="../../assets/mafé.PNG">
   <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-    <ion-button fill="outline" style="height: 20px;width: 80px;">
+    <ion-button fill="outline" style="height: 20px;width: 90px;">
       <ion-icon name="add"></ion-icon>
     Voir Plus
   </ion-button>
@@ -118,7 +121,19 @@
     
   <img  src="../../assets/fruits_@2x.png">
   <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-    <ion-button fill="outline" style="height: 20px;width: 80px;">
+    <ion-button fill="outline" style="height: 20px;width: 90px;">
+      <ion-icon name="add"></ion-icon>
+    Voir Plus
+  </ion-button>
+</ion-card-content>
+
+</ion-card>
+
+<ion-card  >
+    
+  <img  src="../../assets/Rectangle_66 (3).png">
+  <ion-card-content> <h3><p>Categorie 1 </p></h3> 
+    <ion-button fill="outline" style="height: 20px;width: 90px;">
       <ion-icon name="add"></ion-icon>
     Voir Plus
   </ion-button>

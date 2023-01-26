@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'Aabezzee';
+}
 ion-content{
     --ion-background-color:#fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -37,6 +39,7 @@ ion-card{
      width: 7.2rem;
  }
  ion-card-title{
+  font-family: 'Aabezzee';
      font-size: 20px;
      color: #D2EDDD;
      font-weight: 500;
@@ -51,6 +54,7 @@ ion-card{
       width: 140px;
       height: 50px;
       --border-radius: 40px;
+      font-family: 'Aabezzee';
       --background: #E88441;
       color:#fff;
     // margin-left: 25px;

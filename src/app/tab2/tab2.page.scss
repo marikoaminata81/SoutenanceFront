@@ -27,3 +27,81 @@ ion-content {
         break-inside: avoid;
     }
    }
+
+
+   
+.doctors--right--btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  background-color: #E88441;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.add:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.add i {
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+}
+
+.doctors--cards {
+  display: flex;
+  gap: 20px;
+}
+
+.doctor--card {
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  transition: .3s;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .8rem;
+}
+
+.doctor--card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img--box--cover {
+  border: 1px solid #E88441;
+  padding: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.img--box {
+  position: relative;
+  width: 71px;
+  height: 71px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.free {
+  color: #80df05;
+}
+
+.scheduled {
+  color: #ff9b3d;
+}

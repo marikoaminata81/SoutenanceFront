@@ -237,144 +237,242 @@
 
 
 
-.logo{
+// .logo{
 
-}
+// }
 
-.video-box {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-color: black;
-}
-.videoPlayer {
-    width: 100%;
-    margin-top: -30px;
+// .video-box {
+//     height: 100%;
+//     width: 100%;
+//     position: relative;
+//     overflow: hidden;
+//     background-color: black;
+// }
+// .videoPlayer {
+//     width: 100%;
+//     margin-top: -30px;
 
-}
-.video-box .title {
+// }
+// .video-box .title {
     
-    position: absolute;
-    color: white;
-    bottom: 670px;
-    left: 10px;
-    font-size: 16px;
-}
-.video-box .title ion-icon {
+//     position: absolute;
+//     color: white;
+//     bottom: 670px;
+//     left: 10px;
+//     font-size: 16px;
+// }
+// .video-box .title ion-icon {
     
-    color: white;
-    background-color: #000000;
-    margin-bottom: -3px;
-    padding: 2px;
-    font-size: 10px;
-    border-radius: 50%;
+//     color: white;
+//     background-color: #000000;
+//     margin-bottom: -3px;
+//     padding: 2px;
+//     font-size: 10px;
+//     border-radius: 50%;
+// }
+// .username{
+//     color: #E88441;
+   
+// }
+// .video-box .description {
+    
+//     position: absolute;
+    
+//     color: white;
+//     bottom: 425px;
+//     left: 49px;
+//     font-size: 12px;
+// }
+// .song {
+//     position: absolute;
+//     bottom: 15px;
+//     left: 10px;
+//     height: 20px;
+//     display: flex;
+//     align-items: center;
+//     color: white;
+//     font-size: 13px;
+// }
+// .song ion-icon {
+//     margin-right: 10px;
+// }
+// .scroll-text {
+//     overflow: hidden;
+//     width: 100px;
+// }
+// .scroll-text p {
+//     display: inline-block;
+//     padding-right: 2em;
+//     padding-left: 100%;
+//     white-space: nowrap;
+//     animation: defilement-rtl 7s infinite linear;
+// }
+// @keyframes defilement-rtl {
+//     0% {
+//         transform: translate3d(0,0,0);
+//     }
+//     100% {
+//         transform: translate3d(-100%,0,0);
+//     }
+// }
+// .haut{
+//     position: relative;
+//     display: flex;
+// }
+// .button-box {
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     height: 300px;
+//     width: 80px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+// .button-box ion-avatar {
+//    // border: solid white 2px;
+//     margin-bottom: 3px;
+// }
+// .button-box ion-badge {
+//     --color: white;
+//     --background: #DF4662;
+//     --padding-start: 4px;
+//     --padding-end: 4px;
+//     margin-left: 4px;
+// }
+// .button-box img {
+//     width: fit-content;
+//     height: fit-content;
+// }
+// .icon-box {
+//     width: 40px;
+//     height: 50px;
+//     color: white;
+// }
+// .icon-box ion-icon {
+//     font-size: 30px;
+// }
+// .icon-box p {
+//     font-size: 10px;
+//     margin: 0px;
+// }
+// .avatar-box-2 {
+//     width: 50px;
+//     background: linear-gradient(#232323, #6f6f6f);
+//     padding: 10px;
+//     height: 50px;
+//     border-radius: 50%;
+//     margin-top: 10px;
+//     z-index: 5;
+// }
+// .avatar-box-2 ion-avatar {
+//     transform: rotate(45deg);
+//     height: 30px;
+//     width: 30px;
+// }
+// .gif-music {
+//     position: absolute;
+//     right: 30px;
+//     bottom: 20px;
+//     height: 80px !important;
+//     width: auto !important;
+//     z-index: 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2? family= ABeeZee & display=swap');
+*{
+  font-family: 'Aabezzee';
 }
-.username{
-    color: #E88441;
+ion-content {
+    width: calc(100% + 22px);
+  }
+ .insta-feed-header {
+    
+    ion-icon{
+     font-size: 28px;
+    }
+    .insta-font{
+       font-family: 'Aabezzee';
+       font-size: 28px;
+     }
+   }
+   .logo{
+     height: 50px;
+     width: 50px;
+     margin-left: 60px;
+   }
+
+   .parent {
+    // position: absolute;
+    margin-left: 10px;
+    width: 90%;
+    border-radius: 12px 12px 12px 12px;
+    height: 190px;
    
 }
-.video-box .description {
-    
+.parent.md {
+  // position: absolute;
+  margin-left: 4px;
+  width: 90%;
+  border-radius: 12px 12px 12px 12px;
+  height: 190px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.child1 {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     
-    color: white;
-    bottom: 425px;
-    left: 49px;
-    font-size: 12px;
 }
-.song {
-    position: absolute;
-    bottom: 15px;
-    left: 10px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 13px;
-}
-.song ion-icon {
-    margin-right: 10px;
-}
-.scroll-text {
-    overflow: hidden;
-    width: 100px;
-}
-.scroll-text p {
-    display: inline-block;
-    padding-right: 2em;
-    padding-left: 100%;
-    white-space: nowrap;
-    animation: defilement-rtl 7s infinite linear;
-}
-@keyframes defilement-rtl {
-    0% {
-        transform: translate3d(0,0,0);
-    }
-    100% {
-        transform: translate3d(-100%,0,0);
+.child2 {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.664);
+    
+    color: white; 
+    text-align: center;
+    h4{
+      margin-top: 110px;
+     
     }
 }
-.haut{
-    position: relative;
-    display: flex;
+// .user_info{
+//   text-align: center;
+//   margin-right:140px;
+//   margin-top: 30px;
+// }
+
+ion-avatar{
+  height: 25px;
+  width:25px;
+  margin-left:63%;
+  margin-top: -5px;
 }
-.button-box {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 300px;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ion-avatar.md{
+  margin-left:65%;
 }
-.button-box ion-avatar {
-   // border: solid white 2px;
-    margin-bottom: 3px;
+h6{
+  margin-top: -20px;
+  
 }
-.button-box ion-badge {
-    --color: white;
-    --background: #DF4662;
-    --padding-start: 4px;
-    --padding-end: 4px;
-    margin-left: 4px;
-}
-.button-box img {
-    width: fit-content;
-    height: fit-content;
-}
-.icon-box {
-    width: 40px;
-    height: 50px;
-    color: white;
-}
-.icon-box ion-icon {
-    font-size: 30px;
-}
-.icon-box p {
-    font-size: 10px;
-    margin: 0px;
-}
-.avatar-box-2 {
-    width: 50px;
-    background: linear-gradient(#232323, #6f6f6f);
-    padding: 10px;
-    height: 50px;
-    border-radius: 50%;
-    margin-top: 10px;
-    z-index: 5;
-}
-.avatar-box-2 ion-avatar {
-    transform: rotate(45deg);
-    height: 30px;
-    width: 30px;
-}
-.gif-music {
-    position: absolute;
-    right: 30px;
-    bottom: 20px;
-    height: 80px !important;
-    width: auto !important;
-    z-index: 0;
+ion-card{
+  margin-bottom: 5%;
 }
