@@ -20,8 +20,101 @@
 
 
 <ion-content class="ion-padding">
-  
-  <div style="color: #E88441; "><h2>Nouveaux produits</h2></div>
+  <div style="color: #E88441; "><h2>Les catégories</h2>
+    <button class="add">Voir toutes les categories </button></div>
+
+  <div class="doctors">
+    <div class="title">
+        <h2 class="section--title"></h2>
+        <div class="doctors--right--btns">
+            
+            
+        </div>
+    </div>
+  </div>
+  <div class="doctors--cards">
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <a href="#" class="doctor--card">
+          <div class="img--box--cover">
+              <div class="img--box">
+                  <img src="../../assets/legume.jpg" alt="">
+              </div>
+          </div>
+          <p class="">Legumes</p>
+      </a>
+        <a href="#" class="doctor--card">
+          <div class="img--box--cover">
+              <div class="img--box">
+                  <img src="../../assets/mangue.png" alt="">
+              </div>
+          </div>
+          <p class="">Fruits</p>
+      </a>
+      <!-- <a href="#" class="doctor--card">
+        <div class="img--box--cover">
+            <div class="img--box">
+                <img src="assets/images/doctor1.jpg" alt="">
+            </div>
+        </div>
+        <p class="">Gateau</p>
+    </a> -->
+      
+      </ion-slide>
+      <ion-slide>
+        <a href="#" class="doctor--card">
+          <div class="img--box--cover">
+              <div class="img--box">
+                  <img src="../../assets/juice.png" alt="">
+              </div>
+          </div>
+          <p class="">Jus</p>
+      </a>
+      <!-- <a href="#" class="doctor--card">
+        <div class="img--box--cover">
+            <div class="img--box">
+                <img src="assets/images/doctor2.jpg" alt="">
+            </div>
+        </div>
+        <p class="">Gateau</p>
+    </a> -->
+    <a href="#" class="doctor--card">
+      <div class="img--box--cover">
+          <div class="img--box">
+              <img src="../../assets/gateau.jpg" alt="">
+          </div>
+      </div>
+      <p class="">Gateau</p>
+  </a>
+      </ion-slide>
+
+      <ion-slide>
+        <a href="#" class="doctor--card">
+          <div class="img--box--cover">
+              <div class="img--box">
+                  <img src="../../assets/soupe.jpg" alt="">
+              </div>
+          </div>
+          <p class="">Sauce</p>
+      </a>
+     
+    <a href="#" class="doctor--card">
+      <div class="img--box--cover">
+          <div class="img--box">
+              <img src="../../assets/epice.jpg" alt="">
+          </div>
+      </div>
+      <p class="">Épice</p>
+  </a>
+      </ion-slide>
+      
+    </ion-slides>
+    
+   
+    </div>
+
+
+  <div style="color: #E88441; "><h3>Nouveaux produits</h3></div>
   <div style="width: 100%;">
     <ion-card>
   <ion-slides [options]="slideOpts">
@@ -43,7 +136,7 @@
 </ion-card>
 </div>
 <br>
-<div style="color: #E88441;"><h2>Catégorie</h2></div>
+<div style="color: #E88441;"><h3>Ajouté récemment</h3></div>
    <br>
   <div id="container">
   <ion-card >
