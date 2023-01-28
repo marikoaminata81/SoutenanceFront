@@ -1,24 +1,94 @@
 <ion-header>
-  
-  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon name="cart" style="color: #E88441;"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    
-      <img class="logo" src="../assets/Logo1.png" alt="">
-      
-    <ion-buttons slot="end">
-      
-      <ion-button routerLink="/recherche">
-        <ion-icon name="Search" style="color: #E88441;"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+  <ion-toolbar color="ligth">
+      <ion-title><img style="width: 70px;height: 70px; margin-left: 40px;" src="../../assets/Logo1.png">
+          <!-- <ion-icon name="caret-down" style="margin-bottom: -3px;"></ion-icon> -->
+      </ion-title>
+      <ion-buttons slot="start">
+          <ion-button>
+              <ion-icon color="dark" name="person-add-outline"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+          <ion-button routerLink="/settings-and-privacy">
+              <ion-icon color="dark" name="menu"></ion-icon>
+          </ion-button>
+      </ion-buttons>
   </ion-toolbar>
+
 </ion-header>
 
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-padding-vertical">
+      <ion-avatar class="avatar">
+          <img src="../../assets/Nounou-DEMBAGA.jpg" alt="" class="image-round">
+      </ion-avatar>
+      <div class="ion-text-center username">
+          <ion-text>@cloneapplcaitons</ion-text>
+      </div>
+      <ion-grid fixed>
+          <ion-row class="ion-no-padding">
+              <ion-col size="4">
+                  <div class="ion-text-center">
+                      <span><strong>0</strong></span> <br>
+                      <small>Following</small>
+                  </div>
+              </ion-col>
+              <ion-col size="4">
+                  <div class="ion-text-center">
+                      <span><strong>0</strong></span> <br>
+                      <small>Followers</small>
+                  </div>
+              </ion-col>
+              <ion-col size="4">
+                  <div class="ion-text-center">
+                      <span><strong>0</strong></span> <br>
+                      <small>Like</small>
+                  </div>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+      <div class="ion-text-center btn-edit">
+          <a>Edit profile</a>
+          <!-- <a class="bookmark">
+              <ion-icon class="icon-mark" name="bookmark-outline"></ion-icon>
+          </a> -->
+      </div>
+  </div>
+  <div class="ion-text-center ion-margin-top">
+      <span>Tap to add bio</span>
+  </div>
 
-<ion-content>
+  <div class="segment">
+      <ion-segment color="dark" [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="video">
+            <ion-icon name="videocam-outline"></ion-icon>
+            <ion-label>Vidéos</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="food">
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <ion-label>Postes </ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="video_liked">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <ion-label>Aimées </ion-label>
+          </ion-segment-button>
+      </ion-segment>
+  </div>
 
+  <div class="center">
+
+<div class="video" *ngIf="selectedSegment == 'video'">
+Bonjour je suis Video
+</div>
+
+
+<div class="food" *ngIf="selectedSegment == 'food'">
+  Bonjour je suis food
+</div>
+
+<div class="video_liked" *ngIf="selectedSegment == 'video_liked'">
+  Bonjour je suis Video liké
+
+</div>
+  </div>
 </ion-content>
