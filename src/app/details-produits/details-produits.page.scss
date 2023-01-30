@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2? family= ABeeZee & display=swap');
+*{
+  font-family: 'Aabezzee';
+}
+ion-content {
+    width: calc(100% + 22px);
+  }
+ .insta-feed-header {
+    
+    ion-icon{
+     font-size: 28px;
+    }
+    .insta-font{
+       font-family: 'Aabezzee';
+       font-size: 28px;
+     }
+   }
+   
+   .logo{
+     height: 90px;
+     width: 90px;
+     margin-left: 50px;
+   }
+
+
+.tweet {
+    margin-top: -10px;
+}
+.tweet ion-label {
+    line-height: 1!important;
+    font-size: 15px;
+    margin: 6px 0px 6px 0px!important;
+    min-height: 34px;
+}
+.tweet-img {
+    height: 30%;
+    width: 100%;
+   // margin-left: 2.5%;
+    
+}
+ion-card{
+    margin-left: 4px;
+    width: 90%;
+  }
+.img{
+    height: 50%;
+}
+p,b{
+    
+    color: black;
+    padding: 12px;
+}
+.btn{
+    padding-left: 35px;
+     border-radius: 20px;
+     align-items: center;
+}

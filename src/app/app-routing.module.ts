@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  // },
   // {
   //   path: '',
   //   loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
@@ -60,6 +60,11 @@ const routes: Routes = [
     path: 'mainscreen',
     loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
   },
+  {
+    path: '',
+    loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule)
+  },
+  
 ];
 @NgModule({
   imports: [
