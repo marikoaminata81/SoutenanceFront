@@ -61,8 +61,12 @@ const routes: Routes = [
     loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
   },
   {
-    path: '',
+    path: 'details-produits',
     loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   },
   
 ];

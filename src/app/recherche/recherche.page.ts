@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ServicesService } from '../Services/service.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-recherche',
@@ -7,34 +8,44 @@ import { ServicesService } from '../Services/service.service';
   styleUrls: ['./recherche.page.scss'],
 })
 export class RecherchePage implements OnInit {
-  hideIcon: boolean = false;
-  options = {
-      loop: true,
-      autoplay: true
+    segment = 0;
+    selectedSlide: any;
+    @ViewChild('slides', { static: false })
+    slider!: IonSlides;
+    
+    constructor() { }
+  
+    options = {
+      slidesPerView: 1.5,
+      centered: true,
+      spaceBetweenView:10
+    }
+  
+    sliderOptions ={
+    initialSlide: 0,
+    slidesPerView: 1,
+    speed:400
+    }
+  
+    ngOnInit() {
+    }
+  
+  
+     async segmentChanged(_event: any){
+     console.log(this.segment)
+     this.slider.slideTo(this.segment);
+     //await this.selectedSlide.slideTo(this.segment); 
+     }
+    
+  
+    async slidesChanged(slides: IonSlides) {
+    this.selectedSlide = slides;
+    slides.getActiveIndex().then( selectedIndex =>{
+    this.segment = selectedIndex; 
+     });
+     
+  
+    }
+  
+  
   }
-  optionsTrends = {
-      slidesPerView: 5,
-      spaceBetween: 1,
-      freeMode: true
-  }
-
-  trends: any = [];
-  slides: any = [];
-
-  constructor(private data: ServicesService) {
-  }
-
-  ngOnInit() {
-      this.slides = this.data.getSlides();
-      this.trends = this.data.getTrends();
-  }
-
-  onFocus(event: any) {
-      this.hideIcon = true;
-  }
-
-  lossFocus(event: any) {
-      this.hideIcon = false;
-  }
-
-}

@@ -20,7 +20,18 @@
 </head>
 
 <body>
-  
+  <script>
+    for (const video of videos) {
+      video.addEventListener('click', function () {
+        console.log('clicked');
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    }
+  </script>
   <app-root></app-root>
 </body>
 

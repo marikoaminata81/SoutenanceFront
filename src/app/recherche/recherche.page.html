@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
       <div class="header">
           <ion-icon name="arrow-back-outline" class="arrow-back" *ngIf="hideIcon"></ion-icon>
@@ -31,10 +31,300 @@
               </ion-label>
           </ion-col>
       </ion-row>
-      <ion-slides class="trend-slides" [options]="optionsTrends">
+      <ion-slides class="trend-slides" [options]="">
           <ion-slide *ngFor="let profile of trend.trendProfiles">
               <img src="{{profile.photo}}"/>
           </ion-slide>
       </ion-slides>
   </div>
-</ion-content>
+</ion-content> -->
+
+
+
+
+<ion-header class="ion-no-border">
+    <ion-toolbar style="background:#F4FAF6" class="main-toolbar">
+     <ion-title>
+       
+       </ion-title>
+      </ion-toolbar>
+ </ion-header>
+ <ion-header class="ion-no-border" style="background:#F4FAF6;">
+  
+     <div class="small-toolbar">
+       <ion-icon ios="menu-outline" md="menu-sharp" name="menu" class="icon"></ion-icon>
+       </div>
+       <div class="title-toolbar">
+ 
+         <Strong class="title">Rechercher</Strong> ici    
+     
+     </div>
+    
+ </ion-header>
+ 
+ <ion-content [fullscreen]="true">
+  
+   <div id="container"> 
+    
+     <div class="searchbar">
+       <ion-searchbar placeholder="Recherchez un produit ou une video" no-shadow>  
+       </ion-searchbar>
+ 
+       <!-- Main Featured Products Section -->
+     
+       <div class="main-featured-products">
+          <!-- ion slider for the feature products -->
+          <div class="">
+            
+            <Strong class="title">Les Produits</Strong> Populaires    
+        
+        </div>
+        <ion-slides pager="true" [options]="options" >
+          <!-- slider one -->
+         <ion-slide>
+           <ion-card class="card-wrapper main-product-card">
+             <ion-card-content>
+             <img src="assets/milkBottle22@3x.png" />
+ 
+             <ion-card-title>
+              Fresh Milk 5 Litres
+           </ion-card-title> 
+           
+          </ion-card-content>
+          </ion-card>
+         </ion-slide>
+ <!-- Slider two -->
+         <ion-slide>
+           <ion-card class="card-wrapper main-product-card">
+             <ion-card-content>
+             <img src="assets/fruits_@2x.png" />
+ 
+             <ion-card-title>
+               Fruits
+           </ion-card-title> 
+           
+            
+           
+          </ion-card-content>
+          </ion-card>
+         </ion-slide>
+ 
+         <!-- Slider two -->
+         <ion-slide>
+            <ion-card class="card-wrapper main-product-card">
+              <ion-card-content>
+              <img src="assets/fruits_@2x.png" />
+  
+              <ion-card-title>
+                Fruits
+            </ion-card-title> 
+            
+             
+            
+           </ion-card-content>
+           </ion-card>
+          </ion-slide>
+
+          <!-- Slider three -->
+         <ion-slide>
+            <ion-card class="card-wrapper main-product-card">
+              <ion-card-content>
+              <img src="assets/fruits_@2x.png" />
+  
+              <ion-card-title>
+                Fruits
+            </ion-card-title> 
+            
+             
+            
+           </ion-card-content>
+           </ion-card>
+          </ion-slide>
+
+
+          <!-- Slider four -->
+          <!-- Slider two -->
+         <ion-slide>
+           <ion-card class="card-wrapper main-product-card">
+             <ion-card-content>
+             <img src="assets/fruits_@2x.png" />
+ 
+             <ion-card-title>
+               Fruits
+           </ion-card-title> 
+           
+            
+           
+          </ion-card-content>
+          </ion-card>
+         </ion-slide>
+
+         <!-- Slider two -->
+         <ion-slide>
+            <ion-card class="card-wrapper main-product-card">
+              <ion-card-content>
+              <img src="../../assets/Rectangle_66 (3).png" />
+  
+              <ion-card-title>
+                Fruits
+            </ion-card-title> 
+            
+             
+            
+           </ion-card-content>
+           </ion-card>
+          </ion-slide>
+
+        </ion-slides>
+       </div>
+ 
+       <!-- popular product display section -->
+<!--      
+       <div class="popular-products-section">
+             
+         <ion-header class="ion-no-border" style="background:#F4FAF6" >
+           <ion-toolbar class="segement-toolbar">
+ 
+             <ion-segment mode="md"  [(ngModel)]="segment" (ionChange)="segmentChanged($event)"> 
+             <ion-segment-button value="0" style=" min-height:30px;">
+               <ion-label>
+                 Popular
+               </ion-label>
+             </ion-segment-button>
+ 
+             <ion-segment-button value="1" >
+               <ion-label>
+                 Diary
+               </ion-label>
+             </ion-segment-button>
+             <ion-segment-button value="2" >
+               <ion-label>
+                 Fruits
+               </ion-label>
+             </ion-segment-button> -->
+ 
+              <!-- <ion-segment-button value="3" >
+               <ion-label>
+                 Fresh Joice
+               </ion-label>
+             </ion-segment-button> -->
+ 
+             <!-- </ion-segment>
+ 
+             <ion-slides pager="false" #slides [options]="sliderOptions" (ionSlideDidChange)="slidesChanged(slides)" (ionSlideDidLoad)="slidesChanged(slides)" style="padding-bottom: 50px;">
+                <ion-slide>
+                    <h4>Awesome Slide 1</h4>
+                  </ion-slide>
+               <ion-slide>
+                 <h4>Awesome Slide 2</h4>
+               </ion-slide>
+               <ion-slide>
+                 <h4>Awesome Slide 3</h4>
+               </ion-slide>
+             </ion-slides>
+               
+           </ion-toolbar>
+         </ion-header>
+       </div>-->
+ <br>
+ <br>
+ <div class="">
+            
+    <Strong class="title">Les Vidéos</Strong> Populaires    
+
+</div>
+       <div class="main-featured-products">
+        <!-- ion slider for the feature products -->
+
+      <ion-slides pager="true" [options]="options" >
+        <!-- slider one -->
+       <ion-slide>
+         <ion-card class="card-wrapper main-product-card">
+           <ion-card-content>
+           <img src="../../assets/Djouka.png" />
+
+           <ion-card-title>
+            Fresh Milk 5 Litres
+         </ion-card-title> 
+         
+        </ion-card-content>
+        </ion-card>
+       </ion-slide>
+<!-- Slider two -->
+<ion-slide>
+    <ion-card class="card-wrapper main-product-card">
+      <ion-card-content>
+      <img src="../../assets/Djouka.png" />
+
+      <ion-card-title>
+       Fresh Milk 5 Litres
+    </ion-card-title> 
+    
+   </ion-card-content>
+   </ion-card>
+  </ion-slide>
+
+       <!-- Slider two -->
+       <ion-slide>
+        <ion-card class="card-wrapper main-product-card">
+          <ion-card-content>
+          <img src="../../assets/Djouka.png" />
+
+          <ion-card-title>
+           Fresh Milk 5 Litres
+        </ion-card-title> 
+        
+       </ion-card-content>
+       </ion-card>
+      </ion-slide>
+
+        <!-- Slider three -->
+        <ion-slide>
+            <ion-card class="card-wrapper main-product-card">
+              <ion-card-content>
+              <img src="../../assets/Djouka.png" />
+   
+              <ion-card-title>
+               Fresh Milk 5 Litres
+            </ion-card-title> 
+            
+           </ion-card-content>
+           </ion-card>
+          </ion-slide>
+
+
+        <!-- Slider four -->
+        <!-- Slider two -->
+        <ion-slide>
+            <ion-card class="card-wrapper main-product-card">
+              <ion-card-content>
+              <img src="../../assets/Djouka.png" />
+   
+              <ion-card-title>
+               Fresh Milk 5 Litres
+            </ion-card-title> 
+            
+           </ion-card-content>
+           </ion-card>
+          </ion-slide>
+
+       <!-- Slider two -->
+       <ion-slide>
+        <ion-card class="card-wrapper main-product-card">
+          <ion-card-content>
+          <img src="../../assets/Djouka.png" />
+
+          <ion-card-title>
+           Fresh Milk 5 Litres
+        </ion-card-title> 
+        
+       </ion-card-content>
+       </ion-card>
+      </ion-slide>
+
+      </ion-slides>
+     </div>
+   </div> 
+   </div>
+ 
+ </ion-content>
