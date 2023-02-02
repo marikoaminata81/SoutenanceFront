@@ -1,0 +1,127 @@
+<ion-header>
+    <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back-outline" style="color: #E88441;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+      <img class="logo" src="../assets/Logo1.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <h2 style="text-align: center; color: black;">Commande</h2>
+  <ion-card>
+    <!-- <ion-card-title style="text-align: center;">Commande</ion-card-title> -->
+    <ion-card-content>
+     
+<ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label><h4>Référence:</h4></ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label><h4>Hamburger</h4></ion-label>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <ion-label><h4>Quantité:</h4></ion-label>
+        </ion-col>
+        <ion-col>
+        <ion-label><h4>1</h4></ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label> <h4>Prix:</h4></ion-label>
+        </ion-col>
+        <ion-col>
+        <ion-label> <h4>2500 FCFA</h4></ion-label>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <ion-label><h4>Montant:</h4></ion-label>
+        </ion-col>
+        <ion-col>
+        <ion-label> <h4>2500 FCFA</h4></ion-label>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+       <ion-label><h4>Livraison:</h4></ion-label> 
+       </ion-col>
+       <ion-col>
+       <ion-label><h4>02/04/2023</h4></ion-label> 
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-item>
+
+
+<ion-grid>
+  <h3 style="text-align: center;">Informations du client</h3>
+  <ion-row>
+    <ion-col>
+      <ion-label><h4>Nom:</h4></ion-label>
+    </ion-col>
+
+    <ion-col>
+      <ion-label><h4>Nom1</h4></ion-label>
+    </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+      <ion-label><h4>Prénom:</h4></ion-label>
+      </ion-col>
+      <ion-col>
+      <ion-label><h4>Prénom1</h4></ion-label>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+     <ion-label><h4>Username:</h4></ion-label> 
+     </ion-col>
+     <ion-col>
+     <ion-label><h4>username</h4></ion-label> 
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-label> <h4>Adresse:</h4></ion-label>
+      </ion-col>
+      <ion-col>
+      <ion-label> <h4>Bamako</h4></ion-label>
+    </ion-col>
+    </ion-row>
+
+    <ion-row>
+    <ion-col>
+      <ion-label><h4>Numéro:</h4></ion-label>
+      </ion-col>
+      <ion-col>
+      <ion-label> <h4>78000001</h4></ion-label>
+    </ion-col>
+    </ion-row>
+
+</ion-grid>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button style="padding-left: 25px;"(click)="ValiderCommande()">Valider la commande</ion-button>
+</ion-content>

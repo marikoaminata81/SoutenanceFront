@@ -7,9 +7,10 @@ import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { AlertModalCommandeComponent } from './alert-modal-commande/alert-modal-commande.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,AlertModalCommandeComponent],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
      AppRoutingModule,

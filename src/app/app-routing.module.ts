@@ -6,6 +6,7 @@ const routes: Routes = [
   //   path: '',
   //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   // },
+  
   // {
   //   path: '',
   //   loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
@@ -45,9 +46,10 @@ const routes: Routes = [
     loadChildren: () => import('./page-oups/page-oups.module').then( m => m.PageOupsPageModule)
   },
   {
-    path: 'login',
+    path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  //ng g component nomducomponent
   {
     path: 'fogotpassword',
     loadChildren: () => import('./fogotpassword/fogotpassword.module').then( m => m.FogotpasswordPageModule)
@@ -65,8 +67,12 @@ const routes: Routes = [
     loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule)
   },
   {
-    path: '',
+    path: 'video',
     loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
+  },
+  {
+    path: 'detail-commande',
+    loadChildren: () => import('./detail-commande/detail-commande.module').then( m => m.DetailCommandePageModule)
   },
   
 ];
