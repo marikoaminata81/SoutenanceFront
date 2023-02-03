@@ -4,7 +4,114 @@
 
 <ion-content [scrollY]=false>
 
-  <div class="background-pic">
+ 
+
+
+
+
+<div class="padding"> 
+
+
+  <div class="segment">
+    <ion-segment color="primary" [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="connexion">
+        
+        <ion-label>Connexion</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="inscription">
+        
+        <ion-label>Inscription</ion-label>
+      </ion-segment-button>
+  </ion-segment>
+</div>
+
+ 
+
+
+
+  <div class="connexion" *ngIf="selectedSegment == 'connexion'">
+    <div class="eclipse1">
+      <img src="../../assets/EllipseLogin.png" alt="">
+     </div>
+
+     <ion-item >
+   
+      <ion-input type="text" color="black" placeholder="Nom d'utilisateur"></ion-input>
+      </ion-item>
+      
+      <ion-item >
+      <ion-input type="password" color="black" placeholder="Mot de passe"></ion-input>
+      </ion-item>
+      
+      <ion-item lines="none">
+        <ion-button color="" fill="clear" slot="end">Mot de passe oublié ? </ion-button>
+      </ion-item>
+      <ion-button color="" shape="round" expand="block" routerLink="/login">Connexion</ion-button>
+      <br>
+     
+      <ion-item lines="none">
+        <ion-label style="text-align: center;" color="">Ou connectez-vous avec</ion-label>
+      </ion-item>
+
+    
+    
+    
+</div>
+
+<div class="inscription" *ngIf="selectedSegment == 'inscription'">
+  <div class="eclipse2">
+    <img src="../../assets/EllipseInscription.png" alt="">
+   </div>
+
+   <ion-item >
+    <ion-input type="text" color="black" placeholder="Nom"></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-input type="text" color="black" placeholder="Prénom"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-input type="text" color="black" placeholder="Nom d'utilisateur"></ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-input type="text" color="black" placeholder="Numéro de téléphone"></ion-input>
+          </ion-item>
+    <ion-item >
+    <ion-input type="password" color="black" placeholder="Mot de passe"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color="" shape="round" expand="block" onclick="navigateToSegment()" >Envoyer</ion-button>
+    <br>
+   
+</div>
+
+
+  <!-- <div class="flex">
+  <ion-button shape="round" color="facebook" >
+    
+    <ion-icon name="logo-facebook"></ion-icon>
+     Facebook
+  </ion-button>
+  <ion-button shape="round" color="google">
+    <ion-icon name="logo-google"></ion-icon>
+     Google
+  </ion-button>
+  </div> -->
+  
+  </div>
+
+
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+ <!-- <div class="background-pic">
      <div class="background-filter">
        <div class="shape"><img src="../../assets/Test.svg" /></div>
 
@@ -31,6 +138,4 @@
          </ion-card-content>
        </ion-card>
      </div>
-  </div>
-
-</ion-content>
+  </div> -->

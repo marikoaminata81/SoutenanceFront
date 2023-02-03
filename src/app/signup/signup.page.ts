@@ -8,12 +8,19 @@ import { Router } from '@angular/router';
 })
 export class SignupPage implements OnInit {
 
-  constructor(private router:Router) { }
+  selectedSegment: string='';
 
+ 
+  constructor() { }
+
+  segmentChanged(ev:any){
+    console.log(ev.target.value);
+    this.selectedSegment=ev.target.value;
+  }
   ngOnInit() {
   }
 
-  signUPUser(){
- this.router.navigate(['login']);
-  }
+//   signUPUser(){
+//  this.router.navigate(['login']);
+//   }
 }

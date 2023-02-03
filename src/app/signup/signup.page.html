@@ -1,4 +1,4 @@
-
+<!-- 
 <ion-content [scrollY]=false>
 <div class="background-pic">
   <div class="background-filter">
@@ -33,4 +33,109 @@
   </div>
 </div>
 
+</ion-content> -->
+
+
+
+
+<ion-header>
+
+</ion-header>
+
+<ion-content [scrollY]=false>
+
+ 
+
+
+<div class="eclipse">
+ <img src="../../assets/EllipseLogin.png" alt="">
+</div>
+
+<div class="padding"> 
+
+
+  <div class="segment">
+    <ion-segment color="primary" [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="video">
+        
+        <ion-label>Connexion</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="food"routerLink="/signup" routerLinkActive="active">
+        
+        <ion-label>Inscription</ion-label>
+      </ion-segment-button>
+  </ion-segment>
+</div>
+
+  <ion-item >
+   
+  <ion-input type="text" color="black" placeholder="Nom d'utilisateur"></ion-input>
+  </ion-item>
+  
+  <ion-item >
+  <ion-input type="password" color="black" placeholder="Mot de passe"></ion-input>
+  </ion-item>
+  
+  <ion-item lines="none">
+    <ion-button color="" fill="clear" slot="end">Mot de passe oublié ? </ion-button>
+  </ion-item>
+  <ion-button color="" shape="round" expand="block" routerLink="/" routerLinkActive="active">Connexion</ion-button>
+  <br>
+ 
+  <ion-item lines="none">
+    <ion-label style="text-align: center;" color="">Ou connectez-vous avec</ion-label>
+  </ion-item>
+  <!-- <div class="flex">
+  <ion-button shape="round" color="facebook" >
+    
+    <ion-icon name="logo-facebook"></ion-icon>
+     Facebook
+  </ion-button>
+  <ion-button shape="round" color="google">
+    <ion-icon name="logo-google"></ion-icon>
+     Google
+  </ion-button>
+  </div> -->
+  
+  </div>
+
+
+
+
+
 </ion-content>
+
+
+
+
+
+
+
+ <!-- <div class="background-pic">
+     <div class="background-filter">
+       <div class="shape"><img src="../../assets/Test.svg" /></div>
+
+       <ion-card>
+         <ion-card-header>
+           
+            <ion-img style="height: 250px; width: 250px; padding-left: 10%;" src="../../assets/Logo1.png"></ion-img>
+          
+          
+         </ion-card-header>
+         <ion-card-content>
+            <ion-item>
+             <ion-input placeholder="Nom d'utilisateur"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Mot de passe"></ion-input>
+            </ion-item>
+            <a href="#">Mot de passe oublié?</a>
+
+            <div class="bottom-section">
+              <ion-button (click)="navigateToLoginPage()">Connexion</ion-button>
+              <span> Vous n'avez pas de compte ? <a href="/signup"> Inscrivez-vous</a></span>
+            </div>
+         </ion-card-content>
+       </ion-card>
+     </div>
+  </div> -->
