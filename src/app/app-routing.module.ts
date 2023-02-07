@@ -75,9 +75,22 @@ const routes: Routes = [
     loadChildren: () => import('./detail-commande/detail-commande.module').then( m => m.DetailCommandePageModule)
   },
   {
-    path: '',
+    path: 'panier',
     loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
   },
+  {
+    path: '',
+    loadChildren: () => import('./liste-commande/liste-commande.module').then( m => m.ListeCommandePageModule)
+  },  {
+    path: 'liste-categorie',
+    loadChildren: () => import('./liste-categorie/liste-categorie.module').then( m => m.ListeCategoriePageModule)
+  },
+  {
+    path: 'produits',
+    loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule)
+  },
+
+
 
   
 

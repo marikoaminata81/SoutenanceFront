@@ -2,8 +2,8 @@
   
   <ion-toolbar class="insta-feed-header" color="">
     <ion-buttons slot="start">
-      <ion-button routerLink="/tab2">
-        <ion-icon slot="icon-only" color="#E88441" name="arrow-back"></ion-icon>
+      <ion-button routerLink="/produits">
+        <ion-icon slot="icon-only" style="color:#E88441" name="arrow-back"></ion-icon>
           </ion-button>
     </ion-buttons>
     
@@ -45,7 +45,7 @@
       <!-- <ion-label>
         <h2><b>Total :</b> 2500 FCFA</h2>
       </ion-label> -->
-      <ion-button class="btn">
+      <ion-button class="btn" (click)="ValiderCommande()">
         Ajouter au panier
       </ion-button>
   </ion-card>

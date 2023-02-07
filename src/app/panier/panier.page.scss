@@ -97,14 +97,14 @@ ion-content {
 }
 .content {
 	padding: 20px;
-	width: 100%;
+	//width: 100%;
 	position: relative;
 }
 .content h3 {
 	margin-bottom: 30px;
 }
 .content h4 {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .btn-area {
 	//position: absolute;
@@ -168,10 +168,10 @@ ion-content {
 }
 @media screen and (max-width: 700px) {
 	.content h3 {
-		margin-bottom: 15px;
+		margin-bottom: 0px;
 	}
 	.content h4 {
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 	.btn2 {
 		display: none;
@@ -179,9 +179,11 @@ ion-content {
 	.box {
 		height: auto;
 	}
+	
 	.box img {
-		height: 100px;
-		width: 100px;
+		margin-top: 35px;
+		height: 150px;
+		width: 105px;
 	}
 }
 @media screen and (max-width: 900px) {

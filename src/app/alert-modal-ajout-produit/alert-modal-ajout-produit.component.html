@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>{{message.title || ''}}</h3>
+  <ion-img style="width: 150px; height:150px;" src="../../assets/34309-success.gif"></ion-img>
+  <p>{{message.message || ''}}</p>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-button class="btn" style="border-radius: 20px;" (click)="closeModal()">Retour au menu</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button class="btn" style="border-radius: 20px;" (click)="ModalPanier()" >Voir le Panier</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+  
+</div>

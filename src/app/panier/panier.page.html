@@ -12,17 +12,18 @@
       </div>
       <ion-buttons slot="end">
         
-        <ion-button routerLink="/recherche">
-          <ion-icon name="" style="color: #E88441;"></ion-icon>
+        <ion-button routerLink="/liste-commande">
+          <ion-icon name="bag-check-outline" style="color: #E88441;"></ion-icon>
+        
         </ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
 <ion-content>
-    <h1 style="color: #E88441; text-align: center;">Panier</h1>
  
-
+    <h1 style="color: #E88441; text-align: center;">Panier</h1>
+    
   <!-- <ion-card class="grand">
     <div class="title">
       <h3>Hamburger</h3>
@@ -88,47 +89,58 @@
 
 
 <div class="project">
+  
   <div class="shop">
     <div class="box">
-      <img src="3.jpg">
+      <img src="../../assets/fruits.png">
       <div class="content">
         <h3>Hamburger</h3>
         <h6>Prix: 2500Fcfa</h6>
-        <p class="unit">Quantity: <input name="" value="0"></p>
-        <!-- <p class="unit"> <ion-button fill class="btn-area"> <ion-icon name="close-outline" style="color: #E88441;"></ion-icon></ion-button>
-         </p> -->
+        <p class="unit">Quantité: <input name="" value="0"></p>
+        <ion-buttons class="flex">
+          <ion-button><ion-icon name="close"></ion-icon></ion-button>
+          
+        </ion-buttons>
         
         </div>
     </div>
     <div class="box">
-      <img src="3.jpg">
+      <img src="../../assets/fruits.png">
       <div class="content">
         <h3>Hamburger</h3>
         <h6>Prix: 2500Fcfa</h6>
-        <p class="unit">Quantity: <input name="" value="0"></p>
-        <!-- <p class="unit"> <ion-button fill class="btn-area"> <ion-icon name="close-outline" style="color: #E88441;"></ion-icon></ion-button>
-         </p> -->
+        <p class="unit">Quantité: <input name="" value="0"></p>
+        <ion-buttons class="flex">
+          <ion-button><ion-icon name="close"></ion-icon></ion-button>
+          
+        </ion-buttons>
         
         </div>
     </div>
     <div class="box">
-      <img src="3.jpg">
+      <img src="../../assets/fruits.png">
       <div class="content">
         <h3>Hamburger</h3>
         <h6>Prix: 2500Fcfa</h6>
-        <p class="unit">Quantity: <input name="" value="0"></p>
+        <p class="unit">Quantité: <input name="" value="0"></p>
+        <ion-buttons class="flex">
+          <ion-button><ion-icon name="close"></ion-icon></ion-button>
+          
+        </ion-buttons>
         <!-- <p class="unit"> <ion-button fill class="btn-area"> <ion-icon name="close-outline" style="color: #E88441;"></ion-icon></ion-button>
          </p>
          -->
         </div>
     </div>
   </div>
+
   <div class="right-bar">
     <!-- <p><span>Subtotal</span> <span>2500Fcfa</span></p>
     <hr> -->
-     <p><span>Total</span> <span>2500Fcfa</span></p><ion-button><a href="#"><i class="fa fa-shopping-cart"></i>Valider</a></ion-button>
+     <p><span>Total</span> <span>2500Fcfa</span></p><ion-button shape="round">Valider</ion-button>
    
   </div>
+  
 </div>
 
 </ion-content>

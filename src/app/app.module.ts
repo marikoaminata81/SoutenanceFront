@@ -8,10 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AlertModalCommandeComponent } from './alert-modal-commande/alert-modal-commande.component';
+import { AlertModalAjoutProduitComponent } from './alert-modal-ajout-produit/alert-modal-ajout-produit.component';
 
 
 @NgModule({
-  declarations: [AppComponent,AlertModalCommandeComponent],
+  declarations: [AppComponent,AlertModalCommandeComponent,AlertModalAjoutProduitComponent],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
      AppRoutingModule,
