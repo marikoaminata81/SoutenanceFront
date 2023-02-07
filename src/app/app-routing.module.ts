@@ -46,7 +46,7 @@ const routes: Routes = [
     loadChildren: () => import('./page-oups/page-oups.module').then( m => m.PageOupsPageModule)
   },
   {
-    path: '',
+    path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   //ng g component nomducomponent
@@ -74,6 +74,13 @@ const routes: Routes = [
     path: 'detail-commande',
     loadChildren: () => import('./detail-commande/detail-commande.module').then( m => m.DetailCommandePageModule)
   },
+  {
+    path: '',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
+
+  
+
   
 ];
 @NgModule({

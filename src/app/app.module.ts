@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AlertModalCommandeComponent } from './alert-modal-commande/alert-modal-commande.component';
 
+
 @NgModule({
   declarations: [AppComponent,AlertModalCommandeComponent],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
      AppRoutingModule,
      FormsModule,
-    ],
+
+],
   providers: [
     VideoPlayer,
     { 
