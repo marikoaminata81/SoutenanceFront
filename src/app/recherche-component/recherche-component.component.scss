@@ -1,6 +1,9 @@
 
 ion-content{
     --background:#F4FAF6 !important; 
+    
+        width: calc(100% + 22px);
+      
  }
  .header-ios .main-toolbar{
      --background:transparent !important;

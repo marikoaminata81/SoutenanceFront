@@ -1,8 +1,8 @@
 <ion-header>
   
-  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
+  <ion-toolbar class="insta-feed-header" color="">
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button  (click)="panier()" >
         <ion-icon name="cart" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -11,7 +11,7 @@
       
     <ion-buttons slot="end">
       
-      <ion-button routerLink="/recherche">
+      <ion-button (click)="recherche()">
         <ion-icon name="Search" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>

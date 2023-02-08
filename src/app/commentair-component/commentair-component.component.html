@@ -1,7 +1,11 @@
 <ion-header>
   <ion-toolbar color="light">
     <ion-buttons slot="start">
-      <ion-back-button color="dark" defaultHref="/home">Retour</ion-back-button>
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close">
+
+        </ion-icon>
+      </ion-button>
     </ion-buttons>
 
     <ion-title>Commentaires</ion-title>

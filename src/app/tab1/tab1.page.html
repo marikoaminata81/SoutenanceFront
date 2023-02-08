@@ -5,7 +5,7 @@
   
                               <ion-toolbar class="insta-feed-header" color="">
                                 <ion-buttons slot="start">
-                                  <ion-button>
+                                  <ion-button  (click)="panier()" >
                                     <ion-icon name="cart" style="color: #E88441;"></ion-icon>
                                   </ion-button>
                                 </ion-buttons>
@@ -14,7 +14,7 @@
                                   
                                 <ion-buttons slot="end">
                                   
-                                  <ion-button routerLink="/recherche">
+                                  <ion-button (click)="recherche()">
                                     <ion-icon name="Search" style="color: #E88441;"></ion-icon>
                                   </ion-button>
                                 </ion-buttons>
@@ -285,13 +285,13 @@
   
   <ion-card class="parent" style="width: 90%;">
   
-    <div class="child1">
+    <div class="child1" >
       <img style="height: 200px; width: 100%;" src="../../assets/Djouka.png" alt="">
     
     </div>
-    <div class="child1 child2" >
+    <div class="child1 child2" routerLink="/video">
      
-        <h4>Mafé Facile en 30 min</h4>
+        <h4 routerLink="/video">Mafé Facile en 30 min</h4>
        
             
               <div class="user_info"> 
@@ -309,9 +309,9 @@
       <img style="height: 200px; width: 100%;" src="../../assets/fakoye.png" alt="">
     
     </div>
-    <div class="child1 child2" >
+    <div class="child1 child2" routerLink="/video">
      
-        <h4>Mafé Facile en 30 min</h4>
+        <h4 routerLink="/video">Mafé Facile en 30 min</h4>
        
             
               <div class="user_info"> 
@@ -334,9 +334,9 @@
       <img style="height: 200px; width: 100%;" src="../../assets/yassa.png" alt="">
     
     </div>
-    <div class="child1 child2" >
+    <div class="child1 child2" routerLink="/video">
      
-        <h4>Mafé Facile en 30 min</h4>
+        <h4 routerLink="/video">Mafé Facile en 30 min</h4>
        
             
               <div class="user_info"> 
@@ -358,9 +358,9 @@
       <img style="height: 200px; width: 100%;" src="../../assets/Zamai.png" alt="">
     
     </div>
-    <div class="child1 child2" >
+    <div class="child1 child2" routerLink="/video">
      
-        <h4>Mafé Facile en 30 min</h4>
+        <h4 routerLink="/video">Mafé Facile en 30 min</h4>
        
             
               <div class="user_info"> 

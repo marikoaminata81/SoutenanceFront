@@ -2,7 +2,7 @@
   
   <ion-toolbar class="insta-feed-header" color="">
     <ion-buttons slot="start">
-      <ion-button >
+      <ion-button (click)="closeModal()">
         <ion-icon name="close" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -26,12 +26,12 @@
    <h3 style="color:#E88441;">Liste des Commandes</h3>
   </ion-item>
 
-  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher...">
 
   <table id="myTable">
     <tr class="header">
       <th style="width:10px;">N°</th>
-      <th style="width:20px;">Réf</th>
+      <th style="width:30px;">Réf</th>
       <th style="width:30px;">Prix</th>
       <th style="width:auto;">Action</th>
     </tr>

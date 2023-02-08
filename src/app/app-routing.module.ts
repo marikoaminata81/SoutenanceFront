@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
   
   // {
   //   path: '',
@@ -33,14 +33,14 @@ const routes: Routes = [
     path: 'tab5',
     loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
   },
-  {
-    path: 'recherche',
-    loadChildren: () => import('./recherche/recherche.module').then( m => m.RecherchePageModule)
-  },
-  {
-    path: 'commentaire',
-    loadChildren: () => import('./commentaire/commentaire.module').then( m => m.CommentairePageModule)
-  },
+  // {
+  //   path: 'recherche',
+  //   loadChildren: () => import('./recherche/recherche.module').then( m => m.RecherchePageModule)
+  // },
+  // {
+  //   path: 'commentaire',
+  //   loadChildren: () => import('./commentaire/commentaire.module').then( m => m.CommentairePageModule)
+  // },
   {
     path: 'page-oups',
     loadChildren: () => import('./page-oups/page-oups.module').then( m => m.PageOupsPageModule)
@@ -74,22 +74,19 @@ const routes: Routes = [
     path: 'detail-commande',
     loadChildren: () => import('./detail-commande/detail-commande.module').then( m => m.DetailCommandePageModule)
   },
+  // {
+  //   path: 'panier',
+  //   loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  // },
   {
-    path: 'panier',
-    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
-  },
-  {
-    path: '',
+    path: 'liste-commande',
     loadChildren: () => import('./liste-commande/liste-commande.module').then( m => m.ListeCommandePageModule)
-  },  {
-    path: 'liste-categorie',
-    loadChildren: () => import('./liste-categorie/liste-categorie.module').then( m => m.ListeCategoriePageModule)
-  },
-  {
-    path: 'produits',
-    loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule)
   },
 
+  {
+    path: 'liste-commande',
+    loadChildren: () => import('./liste-commande/liste-commande.module').then( m => m.ListeCommandePageModule)
+  },
 
 
   

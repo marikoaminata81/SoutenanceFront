@@ -3,7 +3,7 @@
   
    <ion-toolbar class="insta-feed-header" color="">
      <ion-buttons slot="start">
-       <ion-button >
+       <ion-button routerLink="/tab1">
         <ion-icon name="arrow-back-outline" style="color: #E88441;"></ion-icon>
       </ion-button>
      </ion-buttons>
@@ -27,7 +27,7 @@
           <p style="color: white;">12</p>
         </div>
         <div class="videoSidebar__button">
-          <span class="material-icons" ><ion-icon name="chatbubble-ellipses-outline" style="color:#E88441; height: 35px; width: 35px;"></ion-icon></span> 
+          <span class="material-icons" ><ion-icon (click)="open()" name="chatbubble-ellipses-outline" style="color:#E88441; height: 35px; width: 35px;"></ion-icon></span> 
 
           <p style="color: white;">75</p>
         </div>

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { RecherchePage } from './recherche.page';
+import { CommentairComponentComponent } from './commentair-component.component';
 
-describe('RecherchePage', () => {
-  let component: RecherchePage;
-  let fixture: ComponentFixture<RecherchePage>;
+describe('CommentairComponentComponent', () => {
+  let component: CommentairComponentComponent;
+  let fixture: ComponentFixture<CommentairComponentComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RecherchePage ],
+      declarations: [ CommentairComponentComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RecherchePage);
+    fixture = TestBed.createComponent(CommentairComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -9,10 +9,23 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AlertModalCommandeComponent } from './alert-modal-commande/alert-modal-commande.component';
 import { AlertModalAjoutProduitComponent } from './alert-modal-ajout-produit/alert-modal-ajout-produit.component';
+import { PanierComponentComponent } from './panier-component/panier-component.component';
+import { RechercheComponentComponent } from './recherche-component/recherche-component.component';
+import { CommentairComponentComponent } from './commentair-component/commentair-component.component';
+import { ListeCommandeComponentComponent } from './liste-commande-component/liste-commande-component.component';
 
 
 @NgModule({
-  declarations: [AppComponent,AlertModalCommandeComponent,AlertModalAjoutProduitComponent],
+  declarations: [
+    AppComponent,
+    AlertModalCommandeComponent,
+    AlertModalAjoutProduitComponent,
+    PanierComponentComponent,
+  RechercheComponentComponent,
+  CommentairComponentComponent,
+  ListeCommandeComponentComponent,
+  
+],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
      AppRoutingModule,

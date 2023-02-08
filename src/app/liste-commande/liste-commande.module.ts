@@ -7,16 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { ListeCommandePageRoutingModule } from './liste-commande-routing.module';
 
 import { ListeCommandePage } from './liste-commande.page';
-import { TabsPageModule } from "../tabs/tabs.module";
 
 @NgModule({
-    declarations: [ListeCommandePage],
-    imports: [
-        CommonModule,
-        FormsModule,
-        IonicModule,
-        ListeCommandePageRoutingModule,
-        TabsPageModule
-    ]
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    ListeCommandePageRoutingModule
+  ],
+  declarations: [ListeCommandePage]
 })
 export class ListeCommandePageModule {}
