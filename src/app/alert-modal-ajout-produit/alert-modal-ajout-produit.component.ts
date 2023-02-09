@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { PanierComponentComponent } from '../panier-component/panier-component.component';
 
 @Component({
   selector: 'app-alert-modal-ajout-produit',
@@ -16,7 +17,18 @@ closeModal() {
   this.modalController.dismiss();
 }
 ModalPanier() {
- this.router.navigateByUrl('/panier') ;
+  this.ShowModal( );
  this.modalController.dismiss();
+}
+
+
+async ShowModal(){
+  
+const modal = await this.modalController.create({
+  component: PanierComponentComponent,
+  
+  cssClass: 'panier-component'
+});
+await modal.present();
 }
 }

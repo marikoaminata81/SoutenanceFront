@@ -96,6 +96,7 @@ ion-content {
 	object-fit: cover;
 }
 .content {
+	color: black;
 	padding: 20px;
 	//width: 100%;
 	position: relative;
@@ -152,7 +153,7 @@ ion-content {
 }
 .right-bar a {
 //	background-color: #76bfb6;
-	color: #fff;
+	
 	text-decoration: none;
 	display: block;
 	text-align: center;
@@ -191,6 +192,7 @@ ion-content {
 		flex-direction: column;
 	}
 	.right-bar {
+		color: rgb(0, 0, 0);
 		margin-left: 0;
 		margin-bottom: 20px;
 	}

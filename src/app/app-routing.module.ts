@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  
   // {
   //   path: '',
-  //   loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
+  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   // },
+  
+  {
+    path: 'mainscreen',
+    loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
+  },
   
   
   {
@@ -63,6 +63,10 @@ const routes: Routes = [
     loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
   },
   {
+    path: 'produits',
+    loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule)
+  },
+  {
     path: 'details-produits',
     loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule)
   },
@@ -79,14 +83,19 @@ const routes: Routes = [
   //   loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
   // },
   {
-    path: 'liste-commande',
-    loadChildren: () => import('./liste-commande/liste-commande.module').then( m => m.ListeCommandePageModule)
+    path: 'liste-categorie',
+    loadChildren: () => import('./liste-categorie/liste-categorie.module').then( m => m.ListeCategoriePageModule)
+  },
+  {
+    path: 'login1',
+    loadChildren: () => import('./login1/login1.module').then( m => m.Login1PageModule)
   },
 
-  {
-    path: 'liste-commande',
-    loadChildren: () => import('./liste-commande/liste-commande.module').then( m => m.ListeCommandePageModule)
-  },
+
+  // {
+  //   path: 'liste-commande',
+  //   loadChildren: () => import('./liste-commande/liste-commande.module').then( m => m.ListeCommandePageModule)
+  // },
 
 
   
