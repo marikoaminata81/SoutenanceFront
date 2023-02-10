@@ -22,7 +22,7 @@
 
 <ion-content>
  
-    <h1 style="color: #E88441; text-align: center;">Panier</h1>
+    <!-- <h1 style="color: #E88441; text-align: center;">Panier</h1> -->
     
   <!-- <ion-card class="grand">
     <div class="title">
@@ -87,7 +87,7 @@
 
 
 
-
+<!-- 
 <div class="project">
   
   <div class="shop">
@@ -126,21 +126,135 @@
         <ion-buttons class="flex">
           <ion-button><ion-icon name="close"></ion-icon></ion-button>
           
-        </ion-buttons>
+        </ion-buttons> -->
         <!-- <p class="unit"> <ion-button fill class="btn-area"> <ion-icon name="close-outline" style="color: #E88441;"></ion-icon></ion-button>
          </p>
-         -->
+         
         </div>
     </div>
   </div>
 
-  <div class="right-bar">
+  <div class="right-bar"> -->
     <!-- <p><span>Subtotal</span> <span>2500Fcfa</span></p>
     <hr> -->
-     <p><span>Total</span> <span>2500Fcfa</span></p><ion-button shape="round">Valider</ion-button>
+     <!-- <p><span>Total</span> <span>2500Fcfa</span></p><ion-button shape="round">Valider</ion-button>
    
   </div>
   
-</div>
+</div> -->
 
+
+
+<ion-content fullscreen="true">
+  <h1 class="title">Cart</h1>
+
+  <div class="cart-items">
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-footer translucent="true" class="ion-no-border" mode="md">
+    <ion-toolbar color="translucent">
+      <ion-button (click)="closeModal()" expand="block" class="main-button" routerLink="/payement" routerDirection="forward">Continue</ion-button>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>
+
+
+

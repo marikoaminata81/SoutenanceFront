@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ajouter-produit.page.scss'],
 })
 export class AjouterProduitPage implements OnInit {
+valider() {
+throw new Error('Method not implemented.');
+}
 
   constructor() { }
 

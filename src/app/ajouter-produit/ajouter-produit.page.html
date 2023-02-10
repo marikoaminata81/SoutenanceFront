@@ -9,49 +9,48 @@
     
       <img class="logo" src="../assets/Logo1.png" alt="">
       
-    <ion-buttons slot="end">
+    <!-- <ion-buttons slot="end">
       
       <ion-button routerLink="">
         <ion-icon name="" style="color: #E88441;"></ion-icon>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
 <div class="padding">
 <h2 style="text-align: center;">Poster <br>un Produit</h2>
 <div class="inscription">
- 
+  
   <ion-item >
     <!-- <ion-label position="stacked">Nom du produit</ion-label> -->
-    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom du produit"></ion-input>
+    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom du produit*"></ion-input>
     </ion-item>
     <ion-item >
       <!-- <ion-label position="stacked">Description du produit</ion-label> -->
-      <ion-input [clearInput]="true" type="text" color="" placeholder="Description du produit"></ion-input>
+      <ion-input [clearInput]="true" type="text" color="" placeholder="Description du produit*"></ion-input>
       </ion-item>
       <ion-item >
         <!-- <ion-label position="stacked">Le prix du produit</ion-label> -->
-        <ion-input [clearInput]="true" type="number" color="" placeholder="Prix du produit"></ion-input>
+        <ion-input [clearInput]="true" type="number" color="" placeholder="Prix du produit*"></ion-input>
         </ion-item>
         
         <ion-item>
-          <ion-label position="stacked">Date de fabrication(Facultatif)</ion-label>
+          <ion-label position="stacked">Date de fabrication</ion-label>
           <ion-input [clearInput]="true" type="date" ></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Date de péremption(Facultatif)</ion-label>
+          <ion-label position="stacked">Date de péremption</ion-label>
           <ion-input [clearInput]="true" type="date" ></ion-input>
         </ion-item><br>
         <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
-          <label class="label1" for="file"><img src="../../assets/camera0.svg" alt=""></label>
+          <label class="label1" for="file"><img class="photo" src="../../assets/camera0.svg" alt=""></label>
         </ion-button> 
-    <br>
-    <ion-button color="" class="btn" shape="round" expand="block" >Soumettre</ion-button>
-    <!-- (click)="valider()" -->
-    <br>
-   
+       <ion-label style="text-align: center;"><h6> Pour Garantir la sécurité alimentaire de nos utilisateurs,
+        votre produits sera soumis afin de voir s’il est consommable ou pas</h6>  </ion-label>
+    
     </div>
 
 
@@ -61,8 +60,13 @@
 
 
 
+</ion-card>
 
-
+<ion-button  expand="block" shape="round" (click)=valider()>
+  Soumettre
+</ion-button> 
+   
+    <br>
 </ion-content>
 
 

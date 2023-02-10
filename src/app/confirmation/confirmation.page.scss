@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2? family= ABeeZee & display=swap');
+*{
+  font-family: 'Aabezzee';
+}
+ion-content {
+    width: calc(100% + 12px);
+    
+  }
+.confirmation {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .outer-circle {
+        width: 200px;
+        height: 200px;
+        background: #f8f8f8;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .inner-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #eeeeee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+    .main-button::after {
+        box-shadow: none !important;
+       
+    }
+    

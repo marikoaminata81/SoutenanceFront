@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -9,9 +10,13 @@ import { ModalController } from '@ionic/angular';
 export class ListeCommandeComponentComponent implements OnInit {
 
   @Input() message: any;
-  constructor(private modalController:ModalController) { }
+  constructor(private modalController:ModalController, private router:Router) { }
   ngOnInit() {}
 closeModal() {
   this.modalController.dismiss();
+}
+fermer(){
+  this.modalController.dismiss();
+  this.router.navigateByUrl("/detail-commande")
 }
 }

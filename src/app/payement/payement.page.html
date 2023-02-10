@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
+  <ion-buttons slot="start">
+    <ion-button routerLink="/tab1">
+      <ion-icon name="arrow-back" style="color: #E88441;"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <img class="logo" src="../assets/Logo1.png" alt="">
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="title" style="text-align: center; color: #E88441;">Payement</h1>
+
+  <div class="cart-items">
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="md">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/fruits_@2x.png" />
+        </div>
+
+        <div class="item-info">
+          <p>Fruits</p>
+          <p>publié par <img style="width: 25px; height: 25px;border-radius: 50%;margin-bottom: -5px;" src="../../assets/Nounou-DEMBAGA.jpg" alt="" srcset=""></p>
+          <p>3000 FCFA</p>
+
+          <div class="qty-selector">
+            <ion-button fill="clear">-</ion-button>
+            <ion-label>1</ion-label>
+            <ion-button fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="address">
+    <ion-item lines="none">
+      ACI 2000,Bamako,ML
+      <ion-badge slot="end">&nbsp;</ion-badge>
+    </ion-item>
+  </div>
+
+  <hr>
+
+  <div class="cart-total">
+    <ion-item lines="none">
+      <ion-label>Total</ion-label>
+      <ion-label  class="ion-text-right">6000 FCFA</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Frais</ion-label>
+      <ion-label  class="ion-text-right">100 FCFA</ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Montant à payer</ion-label>
+      <ion-label  class="ion-text-right">6100 FCFA</ion-label>
+    </ion-item>
+  </div>
+  <ion-footer  class="ion-no-border" mode="md">
+  <ion-toolbar  style="background-color: white;">
+    <ion-button expand="block" class="main-button" routerLink="/confirmation" routerDirection="forward">Payer</ion-button>
+  </ion-toolbar>
+</ion-footer>
+</ion-content>
+
+

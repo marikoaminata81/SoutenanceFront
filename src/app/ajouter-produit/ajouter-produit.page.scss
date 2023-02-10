@@ -71,14 +71,21 @@ ion-content {
 }
  
 .inputfile1 + .label1 {
-    font-size: 1.25em;
-    font-weight: 600;
+    font-size: 2.25em;
+    font-weight: 400;
     color: white;
     background-color: transparent;
     display: inline-block;
     cursor: pointer;
 }
- 
+ .label1{
+  .photo{
+    //padding-left: 25%;
+    padding: -35px;
+    margin-bottom: -12px;
+    margin-left: 0px;
+  }
+ }
 .inputfile1:focus + .label1,
 .inputfile1 + .label1 + ion-button:hover {
     background-color: #E88441;
@@ -129,12 +136,7 @@ ion-content {
   .color-text{
     color: var(--color-text);
   }
-  ion-content{
-
-    // linear-gradient(to right, #4ca1af, #002a3f);
-    //linear-gradient(to right, #f2994a, #f2c94c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      // linear-gradient(#fc4a1a,#f7b733);
-  }
+  
   ion-item {
     --ion-background-color:transparent!important; 
   }
@@ -225,38 +227,4 @@ ion-content {
   box-sizing: border-box;
   line-height: 30px;
   transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1):hover .icon{
-  background: #4267B2;
-}
-.wrapper .button:nth-child(2):hover .icon{
-  background: #1DA1F2;
-}
-
-.wrapper .button:nth-child(3):hover .icon{
-  background: #ff0000;
-}
-.wrapper .button .icon ion-icon{
-  font-size: 25px;
-  line-height: 30px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon ion-icon{
-  color: #fff;
-}
-.wrapper .button span{
-  font-size: 20px;
-  font-weight: 10px;
-  line-height: 10px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1) span{
-  color: #4267B2;
-}
-.wrapper .button:nth-child(2) span{
-  color: #1DA1F2;
-}
-.wrapper .button:nth-child(3) span{
-  color: #ff0000;
 }
