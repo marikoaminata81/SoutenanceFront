@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  // },
   
   {
     path: 'mainscreen',
@@ -93,7 +93,8 @@ const routes: Routes = [
   {
     path: 'ajouter-produit',
     loadChildren: () => import('./ajouter-produit/ajouter-produit.module').then( m => m.AjouterProduitPageModule)
-  },  {
+  },
+  {
     path: 'payement',
     loadChildren: () => import('./payement/payement.module').then( m => m.PayementPageModule)
   },
@@ -101,6 +102,14 @@ const routes: Routes = [
     path: 'confirmation',
     loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
   },
+  {
+    path: '',
+    loadChildren: () => import('./ajouter-plats/ajouter-plats.module').then( m => m.AjouterPlatsPageModule)
+  },  {
+    path: 'ajouter-video',
+    loadChildren: () => import('./ajouter-video/ajouter-video.module').then( m => m.AjouterVideoPageModule)
+  },
+
 
 
 

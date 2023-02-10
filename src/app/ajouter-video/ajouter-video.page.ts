@@ -3,19 +3,17 @@ import { ModalController } from '@ionic/angular';
 import { ProduitAjouterSuccesComponentComponent } from '../produit-ajouter-succes-component/produit-ajouter-succes-component.component';
 
 @Component({
-  selector: 'app-ajouter-produit',
-  templateUrl: './ajouter-produit.page.html',
-  styleUrls: ['./ajouter-produit.page.scss'],
+  selector: 'app-ajouter-video',
+  templateUrl: './ajouter-video.page.html',
+  styleUrls: ['./ajouter-video.page.scss'],
 })
-export class AjouterProduitPage implements OnInit {
-
-
+export class AjouterVideoPage implements OnInit {
   constructor(private modalController: ModalController) { }
 
   ngOnInit() {
   }
   valider(){
-    this.ShowModal("Produit soumis avec succès","" );
+    this.ShowModal("Vidéo publié avec succès","" );
   }
   
   async ShowModal(msg: string,tt: string){

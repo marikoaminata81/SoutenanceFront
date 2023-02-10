@@ -16,6 +16,7 @@ closeModal() {
   this.modalController.dismiss();
 }
 fermer(){
+  this.closeModal;
   this.modalController.dismiss();
   this.router.navigateByUrl("/detail-commande")
 }

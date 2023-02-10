@@ -1,0 +1,230 @@
+ion-content {
+    width: calc(100% + 22px);
+       
+            font-family: ABeezee, Helvetica, sans-serif;
+    
+  }
+ .insta-feed-header {
+    
+    ion-icon{
+     font-size: 28px;
+    }
+    .insta-font{
+       font-family: 'Aabezzee', cursive;
+       font-size: 28px;
+     }
+   }
+
+.logo{
+    height: 90px;
+    width: 90px;
+    margin-left: 50px;
+    
+  }
+
+  .padding{
+    padding:5%;
+    // padding-top:70%;
+    padding-bottom:0;
+  }
+  h2{
+    padding-left:-50px;
+    color: #E88441;
+  }
+.btn{
+    padding-right: 20%;
+    padding-left: 10%;
+  
+    width: 100%;
+}
+.inputvalue1{
+    background: #ffffff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    border: none; 
+ }
+//  ion-input{
+//      border-radius: 12px;
+//      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+//  }
+ img{
+    position: relative;
+    //top: 5%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+.image{
+    // height: 30%;
+    // width: 10%;
+    // border-radius: 12px;
+}
+
+
+.inputfile1 {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+ 
+.inputfile1 + .label1 {
+    font-size: 2.25em;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+ .label1{
+  .photo{
+    //padding-left: 25%;
+    padding: -35px;
+    margin-bottom: -12px;
+    margin-left: 0px;
+  }
+ }
+.inputfile1:focus + .label1,
+.inputfile1 + .label1 + ion-button:hover {
+    background-color: #E88441;
+}
+
+
+.inscription{
+    padding: 12px;
+}
+.segment{
+    top: 12px;
+}
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  .wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-self: start ;
+    align-self: start;
+    background-color: var(--color-bg);
+  }
+  .color-text{
+    color: var(--color-text);
+  }
+  
+  ion-item {
+    --ion-background-color:transparent!important; 
+  }
+  
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  #container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .logo{
+    height: 30%;
+    position: relative;
+  }
+  .logo ion-icon{
+    position: absolute;
+    padding: 50%;
+    font-size:9em;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  .wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-self: start ;
+    align-self: start;
+    background-color: var(--color-bg);
+  }
+  .color-text{
+    color: var(--color-text);
+  }
+
+
+
+  .wrapper{
+    padding-left: 20%;
+  }
+.wrapper .button{
+  display: inline-block;
+  height: 28px;
+  width: 35px;
+  float: left;
+  margin: 0 5px;
+
+  overflow: hidden;
+  background: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 30px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 30px;
+  box-sizing: border-box;
+  line-height: 30px;
+  transition: all 0.3s ease-out;
+}

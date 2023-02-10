@@ -13,6 +13,7 @@ import { PanierComponentComponent } from './panier-component/panier-component.co
 import { RechercheComponentComponent } from './recherche-component/recherche-component.component';
 import { CommentairComponentComponent } from './commentair-component/commentair-component.component';
 import { ListeCommandeComponentComponent } from './liste-commande-component/liste-commande-component.component';
+import { ProduitAjouterSuccesComponentComponent } from './produit-ajouter-succes-component/produit-ajouter-succes-component.component';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { ListeCommandeComponentComponent } from './liste-commande-component/list
   RechercheComponentComponent,
   CommentairComponentComponent,
   ListeCommandeComponentComponent,
-  
+  ProduitAjouterSuccesComponentComponent,
 ],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
