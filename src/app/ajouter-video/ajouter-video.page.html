@@ -21,7 +21,7 @@
 <ion-content>
   <ion-card>
 <div class="padding">
-<h2 style="text-align: center;">Poster un Produit</h2>
+<h2 style="text-align: center;">Poster une Video</h2>
 <div class="inscription">
   
   <ion-item >
@@ -47,11 +47,11 @@
         
         <br>
         <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
-          <label class="label1" for="file"><img class="photo" src="../../assets/camera0.svg" alt=""></label>
+          <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black;"></ion-icon></label>
         </ion-button> 
         <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
-          <label class="label1" for="file"><img class="photo" src="../../assets/video_7.svg" alt=""></label>
-        </ion-button> 
+          <label class="label1" for="file"><ion-icon name="videocam-outline" style="color: black;"></ion-icon> </label>
+        </ion-button>
        
     
     </div>
@@ -65,7 +65,7 @@
 
 </ion-card>
 
-<ion-button  expand="block" shape="round" (click)="valider()">
+<ion-button  style="width: 90%; padding-left: 5px;" shape="round" (click)="valider()">
   Soumettre
 </ion-button> 
    
