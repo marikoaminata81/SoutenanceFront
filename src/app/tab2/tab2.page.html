@@ -2,7 +2,7 @@
   
   <ion-toolbar class="insta-feed-header" color="">
     <ion-buttons slot="start">
-      <ion-button  routerLink="/panier-page" >
+      <ion-button  routerLink="/tabs/panier-page" >
         <ion-icon name="cart" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -11,7 +11,7 @@
       
     <ion-buttons slot="end">
       
-      <ion-button routerLink="/recherche-page">
+      <ion-button routerLink="/tabs/recherche-page">
         <ion-icon name="Search" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -21,7 +21,7 @@
 
 <ion-content class="ion-padding">
   <div style="color: #E88441; "><h2>Les catégories</h2>
-    <button routerLink="/liste-categorie" class="add">Voir toutes les categories </button></div>
+    <button routerLink="/tabs/liste-categorie" class="add">Voir toutes les categories </button></div>
 
   <div class="doctors">
     <div class="title">
@@ -35,7 +35,7 @@
   <div class="doctors--cards">
     <ion-slides [options]="slideOpts" pager="true">
       <ion-slide>
-        <a routerLink="/produits" class="doctor--card">
+        <a routerLink="/tabs/produits" class="doctor--card">
           <div class="img--box--cover">
               <div class="img--box">
                   <img src="../../assets/legume.jpg" alt="">
@@ -43,7 +43,7 @@
           </div>
           <p class="">Legumes</p>
       </a>
-        <a routerLink="/produits" class="doctor--card">
+        <a routerLink="/tabs/produits" class="doctor--card">
           <div class="img--box--cover">
               <div class="img--box">
                   <img src="../../assets/mangue.png" alt="">
@@ -62,7 +62,7 @@
       
       </ion-slide>
       <ion-slide>
-        <a routerLink="/produits" class="doctor--card">
+        <a routerLink="/tabs/produits" class="doctor--card">
           <div class="img--box--cover">
               <div class="img--box">
                   <img src="../../assets/juice.png" alt="">
@@ -78,7 +78,7 @@
         </div>
         <p class="">Gateau</p>
     </a> -->
-    <a routerLink="/produits" class="doctor--card">
+    <a routerLink="/tabs/produits" class="doctor--card">
       <div class="img--box--cover">
           <div class="img--box">
               <img src="../../assets/gateau.jpg" alt="">
@@ -89,7 +89,7 @@
       </ion-slide>
 
       <ion-slide>
-        <a routerLink="/produits" class="doctor--card">
+        <a routerLink="/tabs/produits" class="doctor--card">
           <div class="img--box--cover">
               <div class="img--box">
                   <img src="../../assets/soupe.jpg" alt="">
@@ -98,7 +98,7 @@
           <p class="">Sauce</p>
       </a>
      
-    <a routerLink="/produits" class="doctor--card">
+    <a routerLink="/tabs/produits" class="doctor--card">
       <div class="img--box--cover">
           <div class="img--box">
               <img src="../../assets/epice.jpg" alt="">
@@ -144,7 +144,7 @@
       <img style="height: 100px; width: 150px;" src="../../assets/gastro2.jpg">
       
     <ion-card-content> <h3><p>Categorie 1 </p></h3> 
-      <ion-button fill="outline" style=" height: 20px;width: 90px;">
+      <ion-button  fill="outline" style=" height: 20px;width: 90px;">
         <ion-icon name="add"></ion-icon>
       Voir Plus 
     </ion-button>

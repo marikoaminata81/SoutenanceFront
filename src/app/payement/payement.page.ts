@@ -11,5 +11,8 @@ export class PayementPage implements OnInit {
 
   ngOnInit() {
   }
+  Back(): void { 
+    window.history.back();
+  }
 
 }

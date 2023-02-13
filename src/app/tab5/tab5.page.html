@@ -5,13 +5,15 @@
       </ion-title>
       <ion-buttons slot="start">
           <ion-button routerLink="/liste-abonnes">
-              <ion-icon color="dark" name="person-outline"></ion-icon>
+              <ion-icon style="color: #E88441;" name="person-outline" ></ion-icon>
           </ion-button>
       </ion-buttons>
       <ion-buttons slot="end">
-          <ion-button routerLink="/settings">
-            <ion-icon name="settings-outline"></ion-icon>
-          </ion-button>
+        
+        <ion-button routerLink="/liste-commande-page">
+          <ion-icon name="bag-check-outline" style="color: #E88441;"></ion-icon>
+        
+        </ion-button>
       </ion-buttons>
   </ion-toolbar>
 
@@ -27,28 +29,28 @@
       </div>
       <ion-grid fixed>
           <ion-row class="ion-no-padding">
-              <ion-col size="4">
+              <!-- <ion-col size="4">
                   <div class="ion-text-center">
                       <span><strong>0</strong></span> <br>
                       <small>Following</small>
                   </div>
-              </ion-col>
-              <ion-col size="4">
+              </ion-col> -->
+              <ion-col size="6">
                   <div class="ion-text-center">
                       <span><strong>0</strong></span> <br>
-                      <small>Followers</small>
+                      <small>Abonnées</small>
                   </div>
               </ion-col>
-              <ion-col size="4">
+              <ion-col size="6">
                   <div class="ion-text-center">
                       <span><strong>0</strong></span> <br>
-                      <small>Like</small>
+                      <small>J'aimes </small>
                   </div>
               </ion-col>
           </ion-row>
       </ion-grid>
       <div class="ion-text-center btn-edit">
-          <a>Edit profile</a>
+          <a routerLink="/settings">Modifier le profil</a>
           <!-- <a class="bookmark">
               <ion-icon class="icon-mark" name="bookmark-outline"></ion-icon>
           </a> -->
@@ -80,27 +82,27 @@
 <div class="video" *ngIf="selectedSegment == 'video'">
     <div class="grid">
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
     
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
       </div>
@@ -162,27 +164,27 @@
 <div class="video_liked" *ngIf="selectedSegment == 'video_liked'">
     <div class="grid">
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
     
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
         </div>
 
         
