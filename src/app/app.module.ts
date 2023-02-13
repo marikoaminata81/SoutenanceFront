@@ -9,11 +9,8 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AlertModalCommandeComponent } from './alert-modal-commande/alert-modal-commande.component';
 import { AlertModalAjoutProduitComponent } from './alert-modal-ajout-produit/alert-modal-ajout-produit.component';
-import { PanierComponentComponent } from './panier-component/panier-component.component';
-import { RechercheComponentComponent } from './recherche-component/recherche-component.component';
-import { CommentairComponentComponent } from './commentair-component/commentair-component.component';
-import { ListeCommandeComponentComponent } from './liste-commande-component/liste-commande-component.component';
 import { ProduitAjouterSuccesComponentComponent } from './produit-ajouter-succes-component/produit-ajouter-succes-component.component';
+import { TabsPageModule } from './tabs/tabs.module';
 
 
 @NgModule({
@@ -21,10 +18,6 @@ import { ProduitAjouterSuccesComponentComponent } from './produit-ajouter-succes
     AppComponent,
     AlertModalCommandeComponent,
     AlertModalAjoutProduitComponent,
-    PanierComponentComponent,
-  RechercheComponentComponent,
-  CommentairComponentComponent,
-  ListeCommandeComponentComponent,
   ProduitAjouterSuccesComponentComponent,
 ],
   imports: [BrowserModule, 

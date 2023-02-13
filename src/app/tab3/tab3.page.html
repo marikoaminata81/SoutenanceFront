@@ -2,7 +2,7 @@
   
   <ion-toolbar class="insta-feed-header" color="">
     <ion-buttons slot="start">
-      <ion-button  (click)="panier()" >
+      <ion-button  routerLink="/panier-page" >
         <ion-icon name="cart" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -11,7 +11,7 @@
       
     <ion-buttons slot="end">
       
-      <ion-button (click)="recherche()">
+      <ion-button routerLink="/recherche-page">
         <ion-icon name="Search" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>

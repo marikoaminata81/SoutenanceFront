@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ListeCommandeComponentComponent } from './liste-commande-component.component';
+import { PanierPagePage } from './panier-page.page';
 
-describe('ListeCommandeComponentComponent', () => {
-  let component: ListeCommandeComponentComponent;
-  let fixture: ComponentFixture<ListeCommandeComponentComponent>;
+describe('PanierPagePage', () => {
+  let component: PanierPagePage;
+  let fixture: ComponentFixture<PanierPagePage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListeCommandeComponentComponent ],
+      declarations: [ PanierPagePage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ListeCommandeComponentComponent);
+    fixture = TestBed.createComponent(PanierPagePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

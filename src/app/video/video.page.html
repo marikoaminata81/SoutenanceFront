@@ -3,7 +3,7 @@
   
    <ion-toolbar class="insta-feed-header" color="">
      <ion-buttons slot="start">
-       <ion-button routerLink="/tab1">
+       <ion-button (click)="Back()">
         <ion-icon name="arrow-back-outline" style="color: #E88441;"></ion-icon>
       </ion-button>
      </ion-buttons>
@@ -27,7 +27,7 @@
           <p style="color: white;">12</p>
         </div>
         <div class="videoSidebar__button">
-          <span class="material-icons" ><ion-icon (click)="open()" name="chatbubble-ellipses-outline" style="color:#E88441; height: 35px; width: 35px;"></ion-icon></span> 
+          <span class="material-icons" ><ion-icon routerLink="/commentaires" name="chatbubble-ellipses-outline" style="color:#E88441; height: 35px; width: 35px;"></ion-icon></span> 
 
           <p style="color: white;">75</p>
         </div>
@@ -37,7 +37,7 @@
       <div class="videoFooter">
         <div class="videoFooter__text">
           <div  class="videoFooter__description">
-            <h6>  @<span style="color:#E88441" routerLink="/tab5">Somanath</span></h6>
+            <h6>  @<span style="color:#E88441" routerLink="/profil-visiteursiteur">Somanath</span></h6>
            <h6>Best Video Ever</h6> 
           </div>
           

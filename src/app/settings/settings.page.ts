@@ -1,25 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController, ModalController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 import { AlertModalAjoutProduitComponent } from '../alert-modal-ajout-produit/alert-modal-ajout-produit.component';
+import { AlertModalCommandeComponent } from '../alert-modal-commande/alert-modal-commande.component';
 
 @Component({
-  selector: 'app-details-produits',
-  templateUrl: './details-produits.page.html',
-  styleUrls: ['./details-produits.page.scss'],
+  selector: 'app-settings',
+  templateUrl: './settings.page.html',
+  styleUrls: ['./settings.page.scss'],
 })
-export class DetailsProduitsPage implements OnInit {
+export class SettingsPage implements OnInit {
+
   constructor(private modalController: ModalController){}
 
   ngOnInit(){}
   
-  ValiderCommande(){
-    this.ShowModal("Produit ajouter avec succès","" );
+  valider(){
+    this.ShowModal("Profil modifié avec succès","" );
   }
   
   async ShowModal(msg: string,tt: string){
     
   const modal = await this.modalController.create({
-    component: AlertModalAjoutProduitComponent,
+    component: AlertModalCommandeComponent,
     componentProps:{message:{message:msg,title:tt } },
     cssClass: 'alert-modal-commande'
   });
@@ -28,8 +30,5 @@ export class DetailsProduitsPage implements OnInit {
   Back(): void {
     window.history.back()
   }
-  }
-  
-  
-  
 
+}

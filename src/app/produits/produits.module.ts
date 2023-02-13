@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { ProduitsPageRoutingModule } from './produits-routing.module';
 
 import { ProduitsPage } from './produits.page';
+import { TabsPageModule } from '../tabs/tabs.module';
+import { TabsPageRoutingModule } from '../tabs/tabs-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProduitsPageRoutingModule
+    ProduitsPageRoutingModule,
+    TabsPageModule,
+    TabsPageRoutingModule
   ],
   declarations: [ProduitsPage]
 })

@@ -1,0 +1,74 @@
+ion-content{
+    width: calc(100% + 22px);
+}
+ion-card {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+    margin: 16px 0 24px;
+    position: relative;
+    padding-top: 80px;
+  
+    .img-wrapper {
+      position: absolute;
+      left: 50%;
+      top: -10px;
+      transform: translateX(-50%);
+      img {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+      }
+  
+      ion-button {
+        --border-width: 1px;
+        --border-color: var(--ion-color-light-shade);
+        --border-style: solid;
+        --padding-start: 0;
+        --padding-end: 0;
+        --padding-bottom: 0;
+        --padding-top: 0;
+  
+        --border-radius: 50%;
+        height: 35px;
+        width: 35px;
+  
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+  
+        ion-icon {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .inputfile1 {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+ 
+.inputfile1 + .label1 {
+    font-size: 2.25em;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+ .label1{
+  .photo{
+    //padding-left: 25%;
+    padding: -35px;
+    margin-bottom: -12px;
+    margin-left: 0px;
+  }
+ }
+.inputfile1:focus + .label1,
+.inputfile1 + .label1 + ion-button:hover {
+    background-color: #E88441;
+}

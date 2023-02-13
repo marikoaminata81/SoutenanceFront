@@ -2,22 +2,21 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { IonSlides, ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-recherche-component',
-  templateUrl: './recherche-component.component.html',
-  styleUrls: ['./recherche-component.component.scss'],
+  selector: 'app-recherche-page',
+  templateUrl: './recherche-page.page.html',
+  styleUrls: ['./recherche-page.page.scss'],
 })
-export class RechercheComponentComponent implements OnInit {
+export class RecherchePagePage implements OnInit {
+
   @Input() message: any;
   segment = 0;
     selectedSlide: any;
     @ViewChild('slides', { static: false })
     slider!: IonSlides;
-  constructor(private modalController:ModalController) { }
+  constructor() { }
 
   ngOnInit() {}
-closeModal() {
-  this.modalController.dismiss();
-}
+
 
 
 options = {
@@ -47,5 +46,8 @@ async segmentChanged(_event: any){
  this.segment = selectedIndex; 
   });
   
+}
+Back(): void {
+  window.history.back()
 }
 }

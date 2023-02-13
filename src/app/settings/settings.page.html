@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" fill="transparent" (click)="Back()">
+      <ion-icon name="close" color="dark" ></ion-icon>
+    </ion-button>
+    <ion-title style="padding-left: 20%;">Réglages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card >
+    <div class="img-wrapper">
+      <img src="../../assets/Nounou-DEMBAGA.jpg" />
+      <ion-button style="color: #E88441;">
+         <input type="file" name="file" id="file" class="inputfile1" />
+        <label><ion-icon style="height:30px; width: 30px;" slot="icon-only" name="camera-outline" color="dark"></ion-icon></label>
+         
+      </ion-button>
+    </div>
+    <br>
+   
+    <br>
+    <ion-card-content class="ion-text-center">
+      <ion-item>
+        <ion-label position="stacked">Nom</ion-label>
+        <ion-input [clearInput]="true" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Prénom</ion-label>
+        <ion-input [clearInput]="true" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nom d'utilisateur</ion-label>
+        <ion-input [clearInput]="true" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nom de l'entreprise</ion-label>
+        <ion-input [clearInput]="true" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Adresse</ion-label>
+        <ion-input [clearInput]="true" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Numero de téléphone</ion-label>
+        <ion-input [clearInput]="true" type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input [clearInput]="true" type="email" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Biographie</ion-label>
+        <ion-input [clearInput]="true" type="email" ></ion-input>
+      </ion-item>
+    <br>
+    <br>
+        <ion-button shape="round" expand="block" (click)="valider()">Valider</ion-button>
+      
+      
+      <!-- <ion-text color="medium">
+        <div style="display: flex;" class="ion-justify-content-center">
+          <ion-icon name="location-outline" color="medium">
+          </ion-icon>
+          <p>2345 Street, Ohio, USA.</p>
+        </div>
+      </ion-text> -->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

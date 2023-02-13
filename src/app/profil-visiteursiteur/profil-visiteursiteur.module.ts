@@ -4,21 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PayementPageRoutingModule } from './payement-routing.module';
+import { ProfilVisiteursiteurPageRoutingModule } from './profil-visiteursiteur-routing.module';
 
-import { PayementPage } from './payement.page';
+import { ProfilVisiteursiteurPage } from './profil-visiteursiteur.page';
 import { TabsPageModule } from '../tabs/tabs.module';
-import { TabsPageRoutingModule } from '../tabs/tabs-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PayementPageRoutingModule,
-    TabsPageModule,
-   
+    ProfilVisiteursiteurPageRoutingModule,
+    TabsPageModule
   ],
-  declarations: [PayementPage]
+  declarations: [ProfilVisiteursiteurPage]
 })
-export class PayementPageModule {}
+export class ProfilVisiteursiteurPageModule {}

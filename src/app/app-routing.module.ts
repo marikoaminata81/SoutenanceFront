@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
   
   {
     path: 'mainscreen',
@@ -59,10 +59,6 @@ const routes: Routes = [
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
   {
-    path: 'mainscreen',
-    loadChildren: () => import('./mainscreen/mainscreen.module').then( m => m.MainscreenPageModule)
-  },
-  {
     path: 'produits',
     loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule)
   },
@@ -103,12 +99,43 @@ const routes: Routes = [
     loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
   },
   {
-    path: '',
+    path: 'ajouter-plats',
     loadChildren: () => import('./ajouter-plats/ajouter-plats.module').then( m => m.AjouterPlatsPageModule)
-  },  {
+  },
+  {
     path: 'ajouter-video',
     loadChildren: () => import('./ajouter-video/ajouter-video.module').then( m => m.AjouterVideoPageModule)
   },
+  {
+    path: 'profil-visiteursiteur',
+    loadChildren: () => import('./profil-visiteursiteur/profil-visiteursiteur.module').then( m => m.ProfilVisiteursiteurPageModule)
+  },
+  {
+    path: 'panier-page',
+    loadChildren: () => import('./panier-page/panier-page.module').then( m => m.PanierPagePageModule)
+  },
+  {
+    path: 'recherche-page',
+    loadChildren: () => import('./recherche-page/recherche-page.module').then( m => m.RecherchePagePageModule)
+  },
+  {
+    path: 'liste-commande-page',
+    loadChildren: () => import('./liste-commande-page/liste-commande-page.module').then( m => m.ListeCommandePagePageModule)
+  },
+  {
+    path: 'liste-abonnes',
+    loadChildren: () => import('./liste-abonnes/liste-abonnes.module').then( m => m.ListeAbonnesPageModule)
+  },
+  {
+    path: 'commentaires',
+    loadChildren: () => import('./commentaires/commentaires.module').then( m => m.CommentairesPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+
+
 
 
 

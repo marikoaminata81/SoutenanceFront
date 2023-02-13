@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { CommentairComponentComponent } from '../commentair-component/commentair-component.component';
 
 @Component({
   selector: 'app-video',
@@ -13,18 +12,8 @@ export class VideoPage implements OnInit {
 
   ngOnInit(){}
   
-  open(){
-    this.ShowModal();
-  }
-  
-  async ShowModal(){
-    
-  const modal = await this.modalController.create({
-    component: CommentairComponentComponent,
-    
-    cssClass: 'commentair-component'
-  });
-  await modal.present();
+  Back(): void {
+    window.history.back()
   }
   
 }

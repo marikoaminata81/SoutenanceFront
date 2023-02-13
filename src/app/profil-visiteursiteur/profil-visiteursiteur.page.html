@@ -3,14 +3,14 @@
       <ion-title><img style="width: 70px;height: 70px; margin-left: 40px;" src="../../assets/Logo1.png">
           <!-- <ion-icon name="caret-down" style="margin-bottom: -3px;"></ion-icon> -->
       </ion-title>
-      <ion-buttons slot="start">
-          <ion-button routerLink="/liste-abonnes">
-              <ion-icon color="dark" name="person-outline"></ion-icon>
+      <ion-buttons slot="start"> 
+          <ion-button (click)="Back()">
+              <ion-icon color="dark" name="arrow-back-outline"></ion-icon>
           </ion-button>
       </ion-buttons>
       <ion-buttons slot="end">
-          <ion-button routerLink="/settings">
-            <ion-icon name="settings-outline"></ion-icon>
+          <ion-button routerLink="/liste-abonnes">
+              <ion-icon color="dark" name="person-outline"></ion-icon>
           </ion-button>
       </ion-buttons>
   </ion-toolbar>
@@ -48,14 +48,15 @@
           </ion-row>
       </ion-grid>
       <div class="ion-text-center btn-edit">
-          <a>Edit profile</a>
+         <ion-button shape="">Suivre</ion-button>
+         <ion-button shape="">Suivre</ion-button>
           <!-- <a class="bookmark">
               <ion-icon class="icon-mark" name="bookmark-outline"></ion-icon>
           </a> -->
       </div>
   </div>
   <div class="ion-text-center ion-margin-top">
-      <span>Bienvenue sur ma page !!! </span>
+      <span>Bienvenue sur ma page</span>
   </div>
 
   <div class="segment">
@@ -68,10 +69,7 @@
             <ion-icon name="fast-food-outline"></ion-icon>
             <ion-label>Postes </ion-label>
           </ion-segment-button>
-          <ion-segment-button value="video_liked">
-              <ion-icon name="lock-closed-outline"></ion-icon>
-              <ion-label>Aimées </ion-label>
-          </ion-segment-button>
+          
       </ion-segment>
   </div>
 
@@ -114,32 +112,32 @@
             <img style="height: 100px; width: 150px;" src="../../assets/gastro2.jpg">
    
         </ion-card>
-        <ion-card routerLink="/details-produits">
+        <ion-card >
          
             <img  src="../../assets/Rectangle_66 (2).png">
  
         </ion-card>
         
-        <ion-card routerLink="/details-produits">
+        <ion-card >
           
             <img  src="../../assets/Rectangle_66 (4).png">
             
       
         </ion-card>
       
-        <ion-card  routerLink="/details-produits">
+        <ion-card  >
           
             <img  src="../../assets/ginger-juice.jpg">
             
       
         </ion-card>
         
-        <ion-card  routerLink="/details-produits">
+        <ion-card  >
           
           <img  src="../../assets/pexels-photo-248489.jpeg">
       
       </ion-card>
-      <ion-card  routerLink="/details-produits">
+      <ion-card  >
           
         <img  src="../../assets/mafé.PNG">
        
@@ -151,41 +149,11 @@
         
       </ion-card>
       
-      <ion-card  routerLink="/details-produits">
+      <ion-card  >
           
         <img  src="../../assets/Rectangle_66 (3).png">
       
       </ion-card>
-      </div>
-</div>
-
-<div class="video_liked" *ngIf="selectedSegment == 'video_liked'">
-    <div class="grid">
-        <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
-        </div>
-    
-        <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img src="../../assets/Djouka.png" alt="">
-        </div>
-
-        
       </div>
 </div>
   

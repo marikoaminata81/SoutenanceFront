@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { PanierComponentComponent } from './panier-component.component';
+import { RecherchePagePage } from './recherche-page.page';
 
-describe('PanierComponentComponent', () => {
-  let component: PanierComponentComponent;
-  let fixture: ComponentFixture<PanierComponentComponent>;
+describe('RecherchePagePage', () => {
+  let component: RecherchePagePage;
+  let fixture: ComponentFixture<RecherchePagePage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PanierComponentComponent ],
+      declarations: [ RecherchePagePage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PanierComponentComponent);
+    fixture = TestBed.createComponent(RecherchePagePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
