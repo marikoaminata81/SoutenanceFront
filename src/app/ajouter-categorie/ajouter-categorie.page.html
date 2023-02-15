@@ -1,0 +1,76 @@
+<ion-header>
+  
+  <ion-toolbar  style="background-color: #FCF7F4;"class="insta-feed-header" color="">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/tabs/tab3">
+        <ion-icon name="arrow-back-outline" style="color: #E88441;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+      <img class="logo" src="../assets/Logo1.png" alt="">
+      
+    <!-- <ion-buttons slot="end">
+      
+      <ion-button routerLink="">
+        <ion-icon name="" style="color: #E88441;"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+<div class="padding">
+<h2 style="text-align: center;">Créer une catégorie</h2>
+<div class="inscription">
+  
+  
+  <ion-item >
+    <!-- <ion-label position="stacked">Nom du produit</ion-label> -->
+    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom de la video*       "></ion-input>
+    </ion-item>
+     
+        
+        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
+          <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black;"></ion-icon></label>
+        </ion-button> 
+    </div>
+
+
+
+  
+  </div>
+
+
+
+</ion-card>
+
+<ion-button class="button" id="creer" style="width: 90%; padding-left: 5px;" shape="round" (click)="valider()">
+  Créer
+</ion-button> 
+   
+    <br>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-button><input type="file" name="file" id="file" class="inputfile1" />
+    <label class="label1" for="file"><img src="../../assets/camera0.svg" alt=""></label>
+  </ion-button> -->

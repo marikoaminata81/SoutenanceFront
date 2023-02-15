@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-mainscreen',
@@ -8,14 +8,16 @@ import { Router } from '@angular/router';
 })
 export class MainscreenPage implements OnInit {
 
-  constructor(private route: Router) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
 
-  loginPage(){
-    this.route.navigate(['login']) 
-   }
+  // loginPage(){
+  //   this.route.navigate(['login']) 
+  //  }
 
-
+  //  menu(){
+  //   this.route.("/tabs") 
+  //  }
 }
