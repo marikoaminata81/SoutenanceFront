@@ -10,6 +10,9 @@ export class ProduitsPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  } 
+  Back(): void {
+    window.history.back()
   }
 
 }

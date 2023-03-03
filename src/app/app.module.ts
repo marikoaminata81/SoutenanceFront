@@ -11,7 +11,9 @@ import { AlertModalCommandeComponent } from './alert-modal-commande/alert-modal-
 import { AlertModalAjoutProduitComponent } from './alert-modal-ajout-produit/alert-modal-ajout-produit.component';
 import { ProduitAjouterSuccesComponentComponent } from './produit-ajouter-succes-component/produit-ajouter-succes-component.component';
 import { TabsPageModule } from './tabs/tabs.module';
+// Firebase services + environment module
 
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,8 @@ import { TabsPageModule } from './tabs/tabs.module';
   imports: [BrowserModule, 
     IonicModule.forRoot(),
      AppRoutingModule,
-     FormsModule,
-
+     FormsModule
+    
 ],
   providers: [
     VideoPlayer,

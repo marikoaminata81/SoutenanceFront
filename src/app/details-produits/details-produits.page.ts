@@ -14,8 +14,10 @@ export class DetailsProduitsPage implements OnInit {
   
   ValiderCommande(){
     this.ShowModal("Produit ajouter avec succès","" );
-  }
   
+  }
+ 
+
   async ShowModal(msg: string,tt: string){
     
   const modal = await this.modalController.create({

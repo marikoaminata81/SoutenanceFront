@@ -14,7 +14,9 @@ export class AlertModalAjoutProduitComponent implements OnInit {
   ngOnInit() {}
 closeModal() {
   this.modalController.dismiss();
-  this.router.navigateByUrl("/details-produits")
+  // this.router.navigateByUrl("/details-produits")
 }
 
+// closeModal1(){}
+// this.modalController.dismiss();
 }
