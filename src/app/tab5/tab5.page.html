@@ -20,12 +20,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="ion-padding-vertical">
+  <div class="ion-padding-vertical" *ngIf="currentUser;">
       <ion-avatar class="avatar">
-          <img src="../../assets/Nounou-DEMBAGA.jpg" alt="" class="image-round">
+          <img src="{{currentUser.photo}}" alt="" class="image-round">
       </ion-avatar>
       <div class="ion-text-center username">
-          <ion-text>@cloneapplcaitons</ion-text>
+          <ion-text>{{currentUser.username}}</ion-text>
       </div>
       <ion-grid fixed>
           <ion-row class="ion-no-padding">
@@ -37,14 +37,14 @@
               </ion-col> -->
               <ion-col size="6">
                   <div class="ion-text-center">
-                      <span><strong>0</strong></span> <br>
+                      <span><strong>{{currentUser.follower_count}}</strong></span> <br>
                       <small>Abonnées</small>
                   </div>
               </ion-col>
               <ion-col size="6">
                   <div class="ion-text-center">
-                      <span><strong>0</strong></span> <br>
-                      <small>J'aimes </small>
+                      <span><strong>{{currentUser.follower_count}}</strong></span> <br>
+                      <small>Abonnements </small>
                   </div>
               </ion-col>
           </ion-row>
@@ -57,7 +57,7 @@
       </div>
   </div>
   <div class="ion-text-center ion-margin-top">
-      <span>Bienvenue sur ma page !!! </span>
+      <span>{{currentUser.intro}} </span>
   </div>
 
   <div class="segment">
@@ -79,30 +79,10 @@
 
   <!-- <div class="center"> -->
 
-<div class="video" *ngIf="selectedSegment == 'video'">
-    <div class="grid">
+<div class="video" *ngIf="selectedSegment == 'video'" >
+    <div class="grid" *ngFor="let url of video">
         <div class="img_box">
-            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
-        </div>
-    
-        <div class="img_box">
-            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
-        </div>
-
-        <div class="img_box">
-            <img routerLink="/video" src="../../assets/Djouka.png" alt="">
+            <img routerLink="/video" src="{{url.url}}" alt="">
         </div>
 
       </div>
