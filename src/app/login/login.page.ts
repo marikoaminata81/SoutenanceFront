@@ -45,7 +45,7 @@ export class LoginPage implements OnInit {
 
   onSubmit1(): void{
     console.log(this.form1)
-    this.authService.login(this.form1).subscribe(
+    this.authService.register(this.form1).subscribe(
       data => { 
       console.log(data.accessToken)
       this.tokenService.saveToken(data.accessToken)

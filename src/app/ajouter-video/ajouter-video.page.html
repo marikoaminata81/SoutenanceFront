@@ -20,18 +20,20 @@
 
 <ion-content>
   <ion-card>
+    <form name="form"
+    #f="ngForm"
+    (ngSubmit)="f.form.valid && onSubmit()">
 <div class="padding">
 <h2 style="text-align: center;">Poster une Video</h2>
 <div class="inscription">
   
   <ion-item >
     <!-- <ion-label position="stacked">Nom du produit</ion-label> -->
-    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom de la video*       "></ion-input>
+    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom de la video*    "
+    name="titre" id="titre"class="form form-control inputvalue"name="titre" id="titre"  [(ngModel)]="form.titre" #titre="ngModel"
+    ></ion-input>
     </ion-item>
-    <ion-item >
-      <!-- <ion-label position="stacked">Description du produit</ion-label> -->
-      <ion-input [clearInput]="true" type="text" color="" placeholder="Description*        "></ion-input>
-      </ion-item>
+    
       <!-- <ion-list>
         <ion-item >
           <ion-select interface="popover" placeholder="Categorie            ">
@@ -46,10 +48,12 @@
       
         
         <br>
-        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
+        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" 
+          name="imagecouverture" id="imagecouverture"class="form form-control inputvalue"name="imagecouverture" id="imagecouverture"  [(ngModel)]="form.imagecouverture" #imagecouverture="ngModel"/>
           <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black;"></ion-icon></label>
         </ion-button> 
-        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
+        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1"
+          name="url" id="url"class="form form-control inputvalue"name="url" id="url"  [(ngModel)]="form.url" #url="ngModel" />
           <label class="label1" for="file"><ion-icon name="videocam-outline" style="color: black;"></ion-icon> </label>
         </ion-button>
        
@@ -61,11 +65,11 @@
   
   </div>
 
-
+</form>
 
 </ion-card>
 
-<ion-button  style="width: 90%; padding-left: 5px;" shape="round" (click)="valider()">
+<ion-button  style="width: 90%; padding-left: 5px;" shape="round" (click)="valider()"(click)="onSubmit()" >
   Poster
 </ion-button> 
     <br>

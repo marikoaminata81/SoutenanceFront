@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Itokens } from '../Interface/itokens';
+import { Ivideo } from '../Interface/ivideo';
 import { Video } from '../model/video';
 
 @Injectable({
@@ -18,20 +20,11 @@ export class VideoServiceService {
     }
   
    
-  
-      //methode permettant d'ajouter une boutique
-      ajouterBoutique(titre:any, imagecouverture :any, url: any, user_id:any): Observable<any>{
-        console.log("titre : " + titre  + "user_id: " + user_id)
-            const data = new FormData()
-            data.append('titre', titre );
-            data.append('imagecouverture', imagecouverture );
-            data.append('url', url );
-            data.append('user_id', user_id );
-            console.log(imagecouverture),
-            console.log(url)
-            
-            return this.http.post<any>("http://localhost:8080/api/v1/video/posts/create", data)
-          }
+  urlvideo="http://localhost:8080/api/v1/video/posts/create"
+      //methode permettant d'ajouter une video
+      AjoutVideo(credentials:Ivideo): Observable<any> {
+        return this.http.post<Itokens>(this.urlvideo, credentials)
+      }
   
           // ajouterBout(nom:any, description :any, adresse: any, etat:any, user_id:any,  file :any): Observable<any>{
           //   console.log("nom : " + nom + "etat :" + etat    + "description: " + description)
