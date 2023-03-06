@@ -10,7 +10,7 @@ export class TokenserviceService {
   
   saveToken(token: string): void{
     localStorage.setItem('token', token)
-    this.router.navigate(['home'])
+    this.router.navigate(['tabs/tab1'])
   }
 
   isLogged(): boolean{

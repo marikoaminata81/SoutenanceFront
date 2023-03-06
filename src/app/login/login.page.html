@@ -27,11 +27,9 @@
 
  
 
-<form  *ngIf="!isLoggedIn"
-name="form"
-(ngSubmit)="f.form.valid && onSubmit()"
+<form  name="form"
 #f="ngForm"
-novalidate> 
+(ngSubmit)="f.form.valid && onSubmit()"> 
 
   <div class="connexion" *ngIf="selectedSegment == 'connexion'">
     <div class="eclipse1">
@@ -40,13 +38,7 @@ novalidate>
 
      <ion-item >
    
-      <ion-input type="text" color="black" placeholder="Nom d'utilisateur"
-          class="form-control"
-          name="username"
-          [(ngModel)]="form.username"
-          required
-          #username="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+      <ion-input type="text" name="username" id="username" placeholder="Nom d'utilisateur" class="form form-control inputvalue"name="username" id="username"  [(ngModel)]="form.username" #username="ngModel"
         ></ion-input>
         <div *ngIf="username.errors && f.submitted" class="invalid-feedback">
           Nom d'utilisateur invalide!
@@ -54,14 +46,7 @@ novalidate>
       </ion-item>
       
       <ion-item >
-      <ion-input type="password" color="black" placeholder="Mot de passe"
-          class="form-control"
-          name="password"
-          [(ngModel)]="form.password"
-          required
-          #password="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
-        ></ion-input>
+      <ion-input type="password" name="password" id="password" placeholder="Mots de passe *" class="form form-control inputvalue"name="password" [(ngModel)]="form.password" #password="ngModel" id="password"></ion-input>
         <div *ngIf="password.errors && f.submitted" class="invalid-feedback">
           Mot de Passe invalide!
         </div>
@@ -70,7 +55,7 @@ novalidate>
       <ion-item lines="none">
         <ion-button color="" fill="clear" slot="end">Mot de passe oublié ? </ion-button>
       </ion-item>
-      <ion-button style="padding: -50px;" color="" shape="round" expand="block" routerLink="/tabs/tab1" >Connexion</ion-button>
+      <ion-button style="padding: -50px;" color="" shape="round" expand="block" routerLink="/tabs/tab1" (click)="onSubmit()">Connexion</ion-button>
       <br>
      
       <ion-item lines="none">
@@ -103,86 +88,51 @@ novalidate>
 
 
 <!--*****************************Inscription****************************************** -->
-<form *ngIf="!isSuccessful"
-name="form"
-(ngSubmit)="f.form.valid && onSubmit()"
+<form name="form"
 #f="ngForm"
-novalidate>
+(ngSubmit)="f.form.valid && onSubmit1()">
 <div class="inscription" *ngIf="selectedSegment == 'inscription'">
   <div class="eclipse2">
     <img src="../../assets/EllipseInscription.png" alt="">
    </div>
 
    <ion-item >
-    <ion-input type="text" color="black" placeholder="Nom"type="text"
-    class="form-control"
-    name="nom"
-    [(ngModel)]="form.nom"
-    required
+    <ion-input type="text" name="nom" required
     minlength="3"
-    maxlength="25"
-    #nom="ngModel"
-    [ngClass]="{ 'is-invalid': f.submitted && nom.errors }"></ion-input>
+    maxlength="30" id="nom" placeholder="Nom *" class="form form-control inputvalue"name="nom" [(ngModel)]="form1.nom" #nom="ngModel" id="nom"></ion-input>
 
     </ion-item>
     <ion-item >
-      <ion-input type="text" color="black" placeholder="Prénom"
-      class="form-control"
-      name="prenom"
-      [(ngModel)]="form.prenom"
-      required
+      <ion-input type="text" name="prenom" required
       minlength="3"
-      maxlength="30"
-      #prenom="ngModel"
-      [ngClass]="{ 'is-invalid': f.submitted && prenom.errors }"></ion-input>
+      maxlength="30" id="prenom" placeholder="Prenom *" class="form form-control inputvalue"name="prenom" [(ngModel)]="form1.prenom" #prenom="ngModel" id="prenom"></ion-input>
       </ion-item>
       <ion-item >
-        <ion-input type="text" color="black" placeholder="Nom d'utilisateur"
-          class="form-control"
-          name="username"
-          [(ngModel)]="form.username"
-          required
-          minlength="3"
-          maxlength="20"
-          #username="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && username.errors }"></ion-input>
+        <ion-input type="text" name="username" required
+        minlength="3"
+        maxlength="30" id="username" placeholder="Nom d'utilisateur *" class="form form-control inputvalue"name="username" [(ngModel)]="form1.username" #username="ngModel" id="username"></ion-input>
         </ion-item>
         <ion-item >
-          <ion-input type="text" color="black" placeholder="Numéro de téléphone"
-          
-          class="form-control"
-          name="numero"
-          [(ngModel)]="form.numero"
-          required
-          maxlength="8"
-          #numero="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && numero.errors }"></ion-input>
+          <ion-input type="text" name="Numéro" required
+          minlength="3"
+          maxlength="30" id="numero" placeholder="Numero *" class="form form-control inputvalue"name="numero" [(ngModel)]="form1.numero" #numero="ngModel" id="numero"></ion-input>
           </ion-item>
     <ion-item >
-    <ion-input type="password" color="black" placeholder="Mot de passe"
-    
-          class="form-control"
-          name="password"
-          [(ngModel)]="form.password"
-          required
-          #password="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && password.errors }"></ion-input>
+    <ion-input type="password" name="password" required
+    minlength="3"
+    maxlength="30" id="password" placeholder="Password *" class="form form-control inputvalue"name="password" [(ngModel)]="form1.password" #password="ngModel" id="password"></ion-input>
           
     </ion-item>
     <br>
-    <ion-button color="" shape="round" expand="block" routerLink="/login1">Envoyer</ion-button>
+    <ion-button color="" shape="round" expand="block" routerLink="/login1" (click)="onSubmit1()" >Envoyer</ion-button>
     <br>
-    <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
-      Inscription échouée!<br />{{ errorMessage }}
-    </div>
+    
 </div>
-<div class="alert alert-success" *ngIf="isSuccessful">
-  Inscription effectué!
-</div>
+
 </form>
 
 
-  <!-- <div class="flex">
+   <div class="flex">
   <ion-button shape="round" color="facebook" >
     
     <ion-icon name="logo-facebook"></ion-icon>

@@ -17,12 +17,13 @@ import { httpInterceptorProviders } from './helper/http.interceptor';
 
 
 
+
 import { HttpClientModule } from '@angular/common/http';
 
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { AuthService } from './service/auth.service';
-import { StorageService } from './service/storage.service';
+// import { AuthServiceService } from './service/authservice.service';
+// import { StorageService } from './service/storage.service';
 
 @NgModule({
   declarations: [
@@ -46,36 +47,4 @@ import { StorageService } from './service/storage.service';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  private roles: string[] = [];
-  isLoggedIn = false;
-  
-  username?: string;
-
-  constructor(private storageService: StorageService, private authService: AuthService) { }
-
-  ngOnInit(): void {
-    this.isLoggedIn = this.storageService.isLoggedIn();
-
-    if (this.isLoggedIn) {
-      const user = this.storageService.getUser();
-      this.roles = user.roles;
-
-
-      this.username = user.username;
-    }
-  }
-
-  logout(): void {
-    this.authService.logout().subscribe({
-      next: res => {
-        console.log(res);
-        this.storageService.clean();
-
-        window.location.reload();
-      },
-      error: err => {
-        console.log(err);
-      }
-    });
-  }
 }
