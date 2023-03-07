@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PageOupsGuard } from './page-oups.guard';
 
 const routes: Routes = [
   {
@@ -23,15 +24,15 @@ const routes: Routes = [
   },
   {
     path: 'tab3',
-    loadChildren: () => import('./tab3/tab3.module').then( m => m.Tab3PageModule)
+    loadChildren: () => import('./tab3/tab3.module').then( m => m.Tab3PageModule),canActivate:[PageOupsGuard]
   },
   {
     path: 'tab4',
-    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule),canActivate:[PageOupsGuard]
   },
   {
     path: 'tab5',
-    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
+    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule),canActivate:[PageOupsGuard]
   },
   // {
   //   path: 'recherche',
@@ -43,7 +44,9 @@ const routes: Routes = [
   // },
   {
     path: 'page-oups',
-    loadChildren: () => import('./page-oups/page-oups.module').then( m => m.PageOupsPageModule)
+    loadChildren: () => import('./page-oups/page-oups.module').then( m => m.PageOupsPageModule),
+    canActivate:[PageOupsGuard]
+
   },
   {
     path: 'login',
@@ -60,11 +63,11 @@ const routes: Routes = [
   },
   {
     path: 'produits',
-    loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule)
+    loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule),canActivate:[PageOupsGuard]
   },
   {
     path: 'details-produits',
-    loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule)
+    loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule),canActivate:[PageOupsGuard]
   },
   {
     path: 'video',
@@ -72,7 +75,7 @@ const routes: Routes = [
   },
   {
     path: 'detail-commande',
-    loadChildren: () => import('./detail-commande/detail-commande.module').then( m => m.DetailCommandePageModule)
+    loadChildren: () => import('./detail-commande/detail-commande.module').then( m => m.DetailCommandePageModule),canActivate:[PageOupsGuard]
   },
   // {
   //   path: 'panier',
@@ -133,6 +136,10 @@ const routes: Routes = [
   {
     path: 'settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: '  ajouter-categorie',
+    loadChildren: () => import('./ajouter-categorie/ajouter-categorie.module').then( m => m.AjouterCategoriePageModule)
   },
 
 

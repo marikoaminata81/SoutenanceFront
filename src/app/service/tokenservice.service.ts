@@ -18,4 +18,9 @@ export class TokenserviceService {
     console.log(token)
     return !! token
   }
+  isLoggedd(): boolean{
+    const token = coo
+    console.log(token)
+    return !! token
+  }
 }

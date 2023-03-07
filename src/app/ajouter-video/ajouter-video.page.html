@@ -6,6 +6,7 @@
         <ion-icon name="arrow-back-outline" style="color: #E88441;"></ion-icon>
       </ion-button>
     </ion-buttons>
+
     
       <img class="logo" src="../assets/Logo1.png" alt="">
       
@@ -19,60 +20,52 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <form name="form"
-    #f="ngForm"
-    (ngSubmit)="f.form.valid && onSubmit()">
+  
+    <form (ngSubmit)="uploadVideoAndPhoto()">
+      <ion-card>
 <div class="padding">
 <h2 style="text-align: center;">Poster une Video</h2>
 <div class="inscription">
   
-  <ion-item >
-    <!-- <ion-label position="stacked">Nom du produit</ion-label> -->
-    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom de la video*    "
-    name="titre" id="titre"class="form form-control inputvalue"name="titre" id="titre"  [(ngModel)]="form.titre" #titre="ngModel"
-    ></ion-input>
-    </ion-item>
-    
-      <!-- <ion-list>
-        <ion-item >
-          <ion-select interface="popover" placeholder="Categorie            ">
-            <ion-select-option  value="apples">Fruit</ion-select-option>
-            <ion-select-option value="oranges">Sauce</ion-select-option>
-            <ion-select-option value="bananas">Legume</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-list> -->
-      
-        
-      
-        
-        <br>
-        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" 
-          name="imagecouverture" id="imagecouverture"class="form form-control inputvalue"name="imagecouverture" id="imagecouverture"  [(ngModel)]="form.imagecouverture" #imagecouverture="ngModel"/>
-          <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black;"></ion-icon></label>
-        </ion-button> 
-        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1"
-          name="url" id="url"class="form form-control inputvalue"name="url" id="url"  [(ngModel)]="form.url" #url="ngModel" />
-          <label class="label1" for="file"><ion-icon name="videocam-outline" style="color: black;"></ion-icon> </label>
-        </ion-button>
-       
-    
-    </div>
-
-
-
   
-  </div>
+    <ion-item>
+      <ion-label position="floating">Titre</ion-label>
+      <ion-input type="text" [(ngModel)]="form.titre" name="titre"></ion-input>
+    </ion-item>
 
-</form>
 
+    <!-- <ion-item>
+      <ion-input type="file" (change)="handleImageInputChange($event)" name="imagecouverture"></ion-input>
+    </ion-item>  -->
+
+    
+    <ion-button  expand="block">
+      <input type="file" name="urlImage" (change)="handleImageInputChange($event)" id="file" class="inputfile" />
+      <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black; height:35px;width:35px ;"></ion-icon></label>
+    </ion-button> 
+
+    <!-- <ion-item>
+      <ion-input type="file" (change)="handleVideoInputChange($event)" name="url"></ion-input>
+    </ion-item> -->
+
+    <ion-button  expand="block">
+      <input type="file" name="url" (change)="handleVideoInputChange($event)" id="file" class="inputfile" />
+      <label class="label1" for="file"><ion-icon name="videocam-outline"style="color: black; height:35px;width:35px ;"></ion-icon></label>
+    </ion-button> 
+    
+</div>
+</div>
 </ion-card>
 
-<ion-button  style="width: 90%; padding-left: 5px;" shape="round" (click)="valider()"(click)="onSubmit()" >
+<ion-button  style="width: 90%; padding-left: 5px;" shape="round" (click)="valider()" type="submit" >
   Poster
 </ion-button> 
     <br>
+</form>
+
+
+
+
 </ion-content>
 
 

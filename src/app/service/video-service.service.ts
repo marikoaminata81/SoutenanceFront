@@ -16,15 +16,45 @@ export class VideoServiceService {
     //Affficher toutes les video
   
     getAll(): Observable<any> {
-      return this.http.get<Video[]>(`http://localhost:8080/api/v1/video/all`);
+      return this.http.get(`http://localhost:8080/api/v1/video/all`);
     }
   
    
   urlvideo="http://localhost:8080/api/v1/video/posts/create"
       //methode permettant d'ajouter une video
-      AjoutVideo(credentials:Ivideo): Observable<any> {
-        return this.http.post<Itokens>(this.urlvideo, credentials)
-      }
+      ajouterBoutique(titre:any, imagecouverture :any, url: any): Observable<any>{
+        console.log("titre : " + titre + "imagecouverture: " + imagecouverture + "url: " + url)
+            const data = new FormData()
+            data.append('titre', titre );
+            data.append('imagecouverture', imagecouverture );
+            data.append('url', url );
+           
+            console.log("video ajouter")
+            
+            return this.http.post<any>("http://localhost:8080/api/v1/video/posts/create", data)
+          }
+
+
+
+
+
+ /*const titre:FormData = new FormData()
+ const imagecouverture:FormData = new FormData();
+ const url : FormData= new FormData();
+
+ titre.append('titre',titr);
+ imagecouverture.append('imagecouverture',imagecouvertur);
+ url.append('url',ur);
+*/
+// const formData = new FormData();
+
+
+// console.log("titre : " + titre + "imagecouverture :" + imagecouverture    + "url: " + url)
+//     formData.append('titre', titre);
+//     formData.append('imagecouverture', imagecouverture);
+//     formData.append('url', url);
+//         return this.http.post<Itokens>(`http://localhost:8080/api/v1/video/posts/create`,formData);
+//       }
   
           // ajouterBout(nom:any, description :any, adresse: any, etat:any, user_id:any,  file :any): Observable<any>{
           //   console.log("nom : " + nom + "etat :" + etat    + "description: " + description)

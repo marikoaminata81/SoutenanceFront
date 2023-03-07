@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { StorageService } from '../service/storage.service';
+import { UserService } from '../service/user.service';
+import { VideoServiceService } from '../service/video-service.service';
 
 @Component({
   selector: 'app-tabs',
@@ -8,12 +10,12 @@ import { StorageService } from '../service/storage.service';
 })
 export class TabsPage {
 
-  currentUser: any;
+ 
 
-  constructor(private storageService: StorageService) { }
+  constructor(private storageService: StorageService,userService:UserService) { }
 
   ngOnInit(): void {
-    this.currentUser = this.storageService.getUser();
+   
   }
 }
 

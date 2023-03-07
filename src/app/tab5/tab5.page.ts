@@ -16,10 +16,10 @@ export class Tab5Page {
   constructor(private storageService: StorageService,private userService: UserService) { }
 
   ngOnInit(): void {
-    this.currentUser = this.storageService.getUser();
-    this.userService.videoforUser(this.currentUser.id).subscribe(data=>{
-      this.video = data;
-    })
+    // this.currentUser = this.storageService.getUser();
+    // this.userService.videoforUser(this.currentUser.id).subscribe(data=>{
+    //   this.video = data;
+    // })
   }
 
  selectedSegment: string='video';
