@@ -19,13 +19,14 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <div class="ion-padding-vertical" *ngIf="currentUser;">
+<ion-content  [fullscreen]="true" class="ion-padding">
+    <div>
+  <div class="ion-padding-vertical">
       <ion-avatar class="avatar">
-          <img src="{{currentUser.photo}}" alt="" class="image-round">
+          <img src="{{allvideo[0]?.author.photo}}" alt="" class="image-round">
       </ion-avatar>
       <div class="ion-text-center username">
-          <ion-text>{{currentUser.username}}</ion-text>
+          <ion-text>{{allvideo[0]?.author.username}}</ion-text>
       </div>
       <ion-grid fixed>
           <ion-row class="ion-no-padding">
@@ -37,13 +38,13 @@
               </ion-col> -->
               <ion-col size="6">
                   <div class="ion-text-center">
-                      <span><strong>{{currentUser.follower_count}}</strong></span> <br>
+                      <span><strong>{{allvideo[0]?.author.followerCount}}</strong></span> <br>
                       <small>Abonnées</small>
                   </div>
               </ion-col>
               <ion-col size="6">
                   <div class="ion-text-center">
-                      <span><strong>{{currentUser.follower_count}}</strong></span> <br>
+                      <span><strong>{{allvideo[0]?.author.followingCount}}</strong></span> <br>
                       <small>Abonnements </small>
                   </div>
               </ion-col>
@@ -57,7 +58,7 @@
       </div>
   </div>
   <div class="ion-text-center ion-margin-top">
-      <span>{{currentUser.intro}} </span>
+      <span>{{allvideo[0]?.author.intro}} </span>
   </div>
 
   <div class="segment">
@@ -80,12 +81,22 @@
   <!-- <div class="center"> -->
 
 <div class="video" *ngIf="selectedSegment == 'video'" >
-    <div class="grid" *ngFor="let url of video">
-        <div class="img_box">
-            <img routerLink="/video" src="{{url.url}}" alt="">
-        </div>
-
-      </div>
+    <div id="container" *ngFor="let video of allvideo" >
+        <ion-card  [routerLink]="['/video',video.id]">
+          
+            <img  src="../../assets/{{video.imagecouverture}}">
+   
+        </ion-card>
+        <ion-card [routerLink]="['/video',video.id]">
+         
+            <img  src="../../assets/{{video.imagecouverture}}">
+ 
+        </ion-card>
+        
+       
+      
+        
+    </div>
 </div>
 
 
@@ -102,43 +113,11 @@
  
         </ion-card>
         
-        <ion-card routerLink="/details-produits">
-          
-            <img  src="../../assets/Rectangle_66 (4).png">
-            
-      
-        </ion-card>
-      
-        <ion-card  routerLink="/details-produits">
-          
-            <img  src="../../assets/ginger-juice.jpg">
-            
-      
-        </ion-card>
-        
-        <ion-card  routerLink="/details-produits">
-          
-          <img  src="../../assets/pexels-photo-248489.jpeg">
-      
-      </ion-card>
-      <ion-card  routerLink="/details-produits">
-          
-        <img  src="../../assets/mafé.PNG">
        
       
-      </ion-card>
-      <ion-card  >
-          
-        <img  src="../../assets/fruits_@2x.png">
         
-      </ion-card>
-      
-      <ion-card  routerLink="/details-produits">
-          
-        <img  src="../../assets/Rectangle_66 (3).png">
-      
-      </ion-card>
-      </div>
+    </div>
+    
 </div>
 
 <div class="video_liked" *ngIf="selectedSegment == 'video_liked'">
@@ -170,5 +149,5 @@
         
       </div>
 </div>
-  
+</div>
 </ion-content>

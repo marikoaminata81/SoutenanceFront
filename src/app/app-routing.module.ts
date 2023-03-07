@@ -70,7 +70,7 @@ const routes: Routes = [
     loadChildren: () => import('./details-produits/details-produits.module').then( m => m.DetailsProduitsPageModule),canActivate:[PageOupsGuard]
   },
   {
-    path: 'video',
+    path: 'video/:id',
     loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   },
   {
