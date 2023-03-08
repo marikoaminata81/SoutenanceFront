@@ -4,6 +4,7 @@ import { AuthserviceService } from '../service/authservice.service';
 import { TokenserviceService } from '../service/tokenservice.service';
 import { Icredentials } from '../Interface/icredentials';
 import { IcredentialsInscription } from '../Interface/icredentialsInscription';
+import { StorageService } from '../service/storage.service';
 
 @Component({
   selector: 'app-login',
@@ -25,16 +26,29 @@ export class LoginPage implements OnInit {
     numero:'',
     password: ''
   }
-  constructor(private router:Router,private route: ActivatedRoute, private authService: AuthserviceService, private tokenService: TokenserviceService) { }
+  currentUser: any;
+  // storageService: any;
+  roles: string[]=[];
+  isLoggedIn= false;
+  constructor(private router:Router,private route: ActivatedRoute, private authService: AuthserviceService, private tokenService: TokenserviceService, private storageService:StorageService ) { }
 
   ngOnInit() {
+  if(this.storageService.isLoggedIn()) {
+    this.isLoggedIn = false;
+    this.roles = this.storageService.getUser().roles;
+  }
   }
   onSubmit(): void{
-    console.log(this.form)
+    console.log("kjklljjj",this.form),
+    
     this.authService.login(this.form).subscribe(
       data => { 
-      console.log(data.accessToken)
-      this.tokenService.saveToken(data.accessToken)
+      console.log("byybyNN",data);
+      this.currentUser=data
+      this.storageService.saveUser(data);
+      // this.currentUser = this.storageService.saveToken().id;
+    //  this.currentUser = this.storageService.getbyid().id;
+     this.roles=this.storageService.getUser().roles;
     },
       err => console.log(err),
       //this.router.navigate(['/accueil'])

@@ -148,11 +148,18 @@ export class VideoServiceService {
     let data = new FormData();
     return this.http.post(`http://localhost:8080/api/v1/video/posts/${postId}/unlike`, data,{ responseType: 'text' })
   }
+
+  commenter(postId: number): Observable<any> {
+    let data = new FormData();
+    return this.http.post(`http://localhost:8080/api/v1/video/posts/7/comments`,data,{ responseType: 'text' })}
   getbyid(id: number): Observable<any> {
     return this.http.get(`http://localhost:8080/api/v1/video/posts/${id}`)
   }
-  AfficherParUser(id: number): Observable<any> {
-    return this.http.get(`http://localhost:8080/api/v1/video/videoParUser/2`)
+  AfficherParUser(userId: number): Observable<any> {
+    return this.http.get(`http://localhost:8080/api/v1/video/videoParUser/1`)
+  }
+  AfficherCommentaireParVideo(id: number): Observable<any> {
+    return this.http.get(`http://localhost:8080/api/v1/video/posts/${id}`)
   }
   VerifierPostLikeByUser(idPost: number, idUser: number): Observable<boolean> {
     return this.http.post<boolean>(`http://localhost:8080/api/v1/video/posts/${idPost}/${idUser}`,null)

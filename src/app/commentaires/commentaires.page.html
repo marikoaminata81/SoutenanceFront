@@ -14,30 +14,24 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <form  (ngSubmit)="commentaire()">
+  <ion-list >
     <ion-item>
       <ion-avatar slot="start">
-        <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+        <ion-img src="../../assets/Nounou-DEMBAGA.jpg"></ion-img>
       </ion-avatar>
       <ion-label>
-        <h2> @<span style="color: chocolate;">User</span></h2>
-        <p>Jolie !!!</p>
+        <h2> @<span style="color: chocolate;" routerLink="/profil-visiteursiteur">username</span></h2>
+        <p>Contenue</p>
       </ion-label>
     </ion-item>
-    <ion-item>
-      <ion-avatar slot="start">
-        <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
-      </ion-avatar>
-      <ion-label>
-        <h2> @<span style="color: chocolate;">User</span></h2>
-        <p>J'adore</p>
-      </ion-label>
-    </ion-item>
+   
   </ion-list>
 
   <ion-item fill="outline">
     <ion-label position="floating">Commentez ici</ion-label>
-    <ion-input maxlength="30"[clearInput]="true"></ion-input>
+    <ion-input maxlength="30"[clearInput]="true"[(ngModel)]="form.contenue" name="contenue"></ion-input>
   </ion-item>
-  <ion-button style="top: 50%;">Publier</ion-button>
+  <ion-button style="top: 50%;" type="submit">Publier</ion-button>
+</form>
 </ion-content>

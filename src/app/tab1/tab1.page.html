@@ -39,13 +39,13 @@
       <img style="height: 200px; width: 100%;" src="../../assets/{{videos.imagecouverture}}" alt="">
     
     </div>
-    <div class="child1 child2" routerLink="/video">
+    <div class="child1 child2" [routerLink]="['/video',videos.id]">
      
         <h4 routerLink="/video">{{videos.titre}}</h4>
        
             
               <div class="user_info"> 
-                <ion-avatar routerLink="/tabs/tab5">
+              <ion-avatar [routerLink]="['/tabs/tab5',videos.author.id]">
                   <img src="{{videos.author.photo}}">
               </ion-avatar>
                 <h6>Publié par</h6>

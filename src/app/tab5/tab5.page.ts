@@ -20,7 +20,7 @@ export class Tab5Page {
 
   ngOnInit(): void {
      this.currentUser = this.storageService.getUser().id;
-     console.log(this.currentUser);
+    //  console.log("mes idees",this.currentUser);
     // this.userService.videoforUser(this.currentUser.id).subscribe(data=>{
     //   this.video = data;
     // })

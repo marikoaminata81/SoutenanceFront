@@ -19,59 +19,66 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-<div class="padding">
-<h2 style="text-align: center;">Poster un Plat</h2>
-<div class="inscription">
-  
-  <ion-item >
-    <!-- <ion-label position="stacked">Nom du produit</ion-label> -->
-    <ion-input [clearInput]="true" type="text" color="" placeholder="Nom du plat*"></ion-input>
-    </ion-item>
+  <form  (ngSubmit)="uploadPhotoProduit()">
+    <ion-card>
+  <div class="padding">
+  <h2 style="text-align: center;">Poster un Plat</h2>
+  <div class="inscription">
+    
     <ion-item >
-      <!-- <ion-label position="stacked">Description du produit</ion-label> -->
-      <ion-input [clearInput]="true" type="text" color="" placeholder="Description du plat*"></ion-input>
+      <!-- <ion-label position="stacked">Nom du produit</ion-label> -->
+      <ion-input [clearInput]="true" type="text" color="" placeholder="Nom du produit*" [(ngModel)]="form.nom" name="nom"      ></ion-input>
       </ion-item>
-      <ion-list>
-        <ion-item >
-          <ion-select interface="popover" placeholder="Categorie            ">
-            <ion-select-option  value="apples">Fruit</ion-select-option>
-            <ion-select-option value="oranges">Sauce</ion-select-option>
-            <ion-select-option value="bananas">Legume</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-list>
       <ion-item >
-        <!-- <ion-label position="stacked">Le prix du produit</ion-label> -->
-        <ion-input [clearInput]="true" type="number" min="0" color="" placeholder="Prix         "></ion-input>
+        <!-- <ion-label position="stacked">Description du produit</ion-label> -->
+        <ion-input [clearInput]="true" type="text" color="" placeholder="Description*"  [(ngModel)]="form.description" name="description"       ></ion-input>
         </ion-item>
+        <ion-list>
+          <ion-item >
+            <ion-select [(ngModel)]="form.Categories" name="Categories" interface="popover" placeholder="Categorie*" (ionChange)="ChangeCategorie($event)">
+              <ion-select-option selected >Selectionner une catégorie </ion-select-option>
+              <ion-select-option  *ngFor="let cat of allCategories" [value]="cat">{{cat.nom}}</ion-select-option>
+              <!-- <ion-select-option value="bananas">Legume</ion-select-option> -->
+            </ion-select>
+          </ion-item>
+        </ion-list>
+        <ion-item >
+          <!-- <ion-label position="stacked">Le prix du produit</ion-label> -->
+          <ion-input [clearInput]="true" type="text"  color="" placeholder="Reférence*" [(ngModel)]="form.reference" name="reference" ></ion-input>
+          </ion-item>
+        <ion-item >
+          <!-- <ion-label position="stacked">Le prix du produit</ion-label> -->
+          <ion-input [clearInput]="true" type="number" min="25" color="" placeholder="Prix*" [(ngModel)]="form.prix" name="prix" ></ion-input>
+          </ion-item>
+          
+          <br>
+          <ion-button  expand="block">
+            <input type="file" (change)="handleImageInputChange($event)" id="file" class="inputfile" name="imagecouverture" />
+            <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black; height:35px;width:35px ;"></ion-icon></label>
+          </ion-button> 
+         <ion-label style="text-align: center;"><h6> Pour Garantir la sécurité alimentaire de nos utilisateurs,
+          votre plat sera soumis afin de voir s’il est consommable ou pas</h6>  </ion-label>
+          
         
-       
-       <br>
-        <ion-button  expand="block"><input type="file" name="file" id="file" class="inputfile1" />
-          <label class="label1" for="file"><ion-icon name="camera-outline"style="color: black;"></ion-icon></label>
-        </ion-button> 
-       <ion-label style="text-align: center;"><h6> Pour Garantir la sécurité alimentaire de nos utilisateurs,
-        votre plat sera soumis afin de voir s’il est consommable ou pas</h6>  </ion-label>
+      </div>
+  
+  
+  
     
     </div>
-
-
-
   
-  </div>
-
-
-
-</ion-card>
-
-<ion-button style="width: 90%; padding-left: 15px;"  expand="" shape="round" (click)=valider()>
-  Soumettre
-</ion-button> 
-   <br><br>
-    <br>
-</ion-content>
-
+  
+  
+  </ion-card>
+  
+  <ion-button  expand=""style="width: 90%; padding-left: 10px;" shape="round" (click)="valider()" type="submit">
+    Soumettre
+  </ion-button> 
+  
+   </form>
+     <br><br>
+      <br>
+  </ion-content>
 
 
 
